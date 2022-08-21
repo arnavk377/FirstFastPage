@@ -7,7 +7,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: My First Fastpage
-description: Fastpage project for AP CSP by Arnav
+description: "Fastpage project for AP CSP by Arnav"
 github_username: MuffinMan1287
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "FirstFastPage"
