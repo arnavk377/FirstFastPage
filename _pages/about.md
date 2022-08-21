@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+This website is based on the **[fastpages](https://github.com/fastai/fastpages)** [^1] template and created by Arnav for AP CSP.
 
 
 
