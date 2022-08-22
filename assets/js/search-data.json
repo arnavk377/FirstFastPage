@@ -13,10 +13,10 @@
   
     
         ,"post1": {
-            "title": "Title",
-            "content": "Python Markdown . Printing Hello. . print (&quot;Hello&quot;) . Hello . That&#39;s all folks. .",
-            "url": "https://muffinman1287.github.io/FirstFastPage//FirstFastPage/2022/08/21/first-notebook.html",
-            "relUrl": "/2022/08/21/first-notebook.html",
+            "title": "Python Statement",
+            "content": "print (&quot;Hello&quot;) . Hello . That&#39;s all folks. .",
+            "url": "https://muffinman1287.github.io/FirstFastPage//FirstFastPage/jupyter/2022/08/21/first-notebook.html",
+            "relUrl": "/jupyter/2022/08/21/first-notebook.html",
             "date": " • Aug 21, 2022"
         }
         
