@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "VSCode Markdown",
+            "content": "Making a Markdown in Visual Studio Code . Setting it up . A little different from creating a markdown on GitHub. Interesting. .",
+            "url": "https://muffinman1287.github.io/FirstFastPage//FirstFastPage/markdown/2022/08/21/vsmarkdown.html",
+            "relUrl": "/markdown/2022/08/21/vsmarkdown.html",
+            "date": " • Aug 21, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "Title",
             "content": "print (&quot;Hello&quot;) . Hello .",
             "url": "https://muffinman1287.github.io/FirstFastPage//FirstFastPage/2022/08/21/first-notebook.html",
@@ -12,23 +23,12 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "Markdown Post Test",
             "content": "First Post . Setup . Interesting to learn about this. Kind of easy to set up without knowing prior coding experience. Nice that it is very simple. . Other . Still have to do other steps. That is it for the first post. .",
             "url": "https://muffinman1287.github.io/FirstFastPage//FirstFastPage/markdown/2022/08/21/Test-Post.html",
             "relUrl": "/markdown/2022/08/21/Test-Post.html",
             "date": " • Aug 21, 2022"
-        }
-        
-    
-  
-    
-        ,"post2": {
-            "title": "VSCode Markdown",
-            "content": "Making a Markdown in Visual Studio Code . Setting it up . A little different from creating a markdown on GitHub. Interesting. .",
-            "url": "https://muffinman1287.github.io/FirstFastPage//FirstFastPage/markdown/2022/08/19/vsmarkdown.html",
-            "relUrl": "/markdown/2022/08/19/vsmarkdown.html",
-            "date": " • Aug 19, 2022"
         }
         
     
