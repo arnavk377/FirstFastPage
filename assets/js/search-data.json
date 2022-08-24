@@ -73,6 +73,17 @@
   
 
   
+      ,"page3": {
+          "title": "Course Vocabulary",
+          "content": "Vocabulary . This will have important vocabulary from AP Computer Science. . Python Vocabulary .",
+          "url": "https://muffinman1287.github.io/FirstFastPage//FirstFastPage/vocab/",
+          "relUrl": "/vocab/",
+          "date": ""
+      }
+      
+  
+
+  
 
   
 
@@ -92,7 +103,7 @@
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://muffinman1287.github.io/FirstFastPage//FirstFastPage/robots.txt",
