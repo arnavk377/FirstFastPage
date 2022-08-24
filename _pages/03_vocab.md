@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Course Vocabulary
+title: Vocab
 permalink: /vocab/
 ---
 
