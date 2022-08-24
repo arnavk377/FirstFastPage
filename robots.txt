@@ -1,1 +1,1 @@
-Sitemap: https://muffinman1287.github.io/MyFastpage//FirstFastpage/sitemap.xml
+Sitemap: https://muffinman1287.github.io/FirstFastPage//FirstFastPage/sitemap.xml
