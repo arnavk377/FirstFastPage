@@ -84,6 +84,17 @@
   
 
   
+      ,"page4": {
+          "title": "Notes",
+          "content": "Notes . Contains notes for the course. . Python . Always remember to return a variable at the end of a function. | .",
+          "url": "https://muffinman1287.github.io/FirstFastPage//FirstFastPage/notes/",
+          "relUrl": "/notes/",
+          "date": ""
+      }
+      
+  
+
+  
 
   
 
@@ -103,7 +114,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://muffinman1287.github.io/FirstFastPage//FirstFastPage/robots.txt",
