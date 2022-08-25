@@ -11,3 +11,9 @@ title: Using Images in Posts
 NASA released some pretty neat images taken with the James Webb Space Telescope.
 
 ![]({{ site.baseurl }}/images/webbimage.jpg "Cartwheel Galaxy")
+
+# Comparing Photos From the Past
+
+| Image from 1995 | Image from 2022 |
+|-|-|
+| ![]({{ site.baseurl }}/images/hubble1995.jpeg "From the Hubble Space Telescope") | ![]({{ site.baseurl }}/images/webb2022.jpeg "From the James Webb Telescope") |
