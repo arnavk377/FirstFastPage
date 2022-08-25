@@ -71,9 +71,7 @@
   
 
   
-
-  
-      ,"page3": {
+      ,"page2": {
           "title": "Vocab",
           "content": "Vocabulary . This will have important vocabulary from AP Computer Science. . Python Vocabulary .",
           "url": "https://muffinman1287.github.io/FirstFastPage//FirstFastPage/vocab/",
@@ -84,7 +82,7 @@
   
 
   
-      ,"page4": {
+      ,"page3": {
           "title": "Notes",
           "content": "Notes . Contains notes for the course. . Python . Always remember to return a variable at the end of a function. | .",
           "url": "https://muffinman1287.github.io/FirstFastPage//FirstFastPage/notes/",
@@ -92,6 +90,8 @@
           "date": ""
       }
       
+  
+
   
 
   
