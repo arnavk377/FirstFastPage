@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Using Images in Posts",
-            "content": "An Image From the James Webb Space Telescope . NASA released some pretty neat images taken with the James Webb Space Telescope. . . Comparing Photos From the Past . Image from 1995 Image from 2022 . | | .",
+            "content": "An Image From the James Webb Space Telescope . NASA released some pretty neat images taken with the James Webb Space Telescope. . . Comparing Photos From the Past . Image from 1995 Image from 2022 . | | . Using the table function in markdown, we are able to directly compare the images side by side. Comparing the images, we can see that they are both spectacular images, but the image from the James Webb telescope is much more defined, with a higher image quality. .",
             "url": "https://muffinman1287.github.io/FirstFastPage//FirstFastPage/markdown/2022/08/25/Image-Post.html",
             "relUrl": "/markdown/2022/08/25/Image-Post.html",
             "date": " • Aug 25, 2022"
