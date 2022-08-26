@@ -4,6 +4,8 @@ title: About Me
 permalink: /about/
 ---
 
+![]({{ site.baseurl }}/images/aboutme.png )
+
 This website is based on the **[fastpages](https://github.com/fastai/fastpages)** [^1] template and created by Arnav for AP CSP.
 
 
