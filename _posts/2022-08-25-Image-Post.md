@@ -3,6 +3,7 @@ toc: true
 layout: post
 description: Learning to format images in markdown.
 categories: [markdown]
+image: webbimage.jpg
 title: Using Images in Posts
 ---
 
