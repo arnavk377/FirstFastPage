@@ -84,7 +84,7 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": "This website is based on the fastpages 1 template and created by Arnav for AP CSP. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "content": ". This website is based on the fastpages 1 template and created by Arnav for AP CSP. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://muffinman1287.github.io/FirstFastPage//FirstFastPage/about/",
           "relUrl": "/about/",
           "date": ""
