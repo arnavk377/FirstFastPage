@@ -6,8 +6,15 @@ permalink: /about/
 
 ![]({{ site.baseurl }}/images/aboutme.png )
 
-This website is based on the **[fastpages](https://github.com/fastai/fastpages)** [^1] template and created by Arnav for AP CSP.
+Hi! My name is Arnav Kanekar, and I am currently using this website as a place for my AP Computer Science Principles courses and other classes throughout the school year.
 
+Things I like to do:
+- run
+- watch TV
+- eat
+- sleep
+- spend time with family
 
+---
 
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+Thanks for checking out the About Me section! Feel free to look around the [site](https://muffinman1287.github.io/FirstFastPage/).
