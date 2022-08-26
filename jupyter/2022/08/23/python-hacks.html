@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Hacks for Python | My First Fastpage</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Hacks for Python" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Page to show basic python skills learned by Arnav." />
+<meta property="og:description" content="Page to show basic python skills learned by Arnav." />
+<link rel="canonical" href="https://muffinman1287.github.io/FirstFastPage//FirstFastPage/jupyter/2022/08/23/python-hacks.html" />
+<meta property="og:url" content="https://muffinman1287.github.io/FirstFastPage//FirstFastPage/jupyter/2022/08/23/python-hacks.html" />
+<meta property="og:site_name" content="My First Fastpage" />
+<meta property="og:image" content="https://muffinman1287.github.io/FirstFastPage//FirstFastPage/images/chart-preview.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-08-23T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://muffinman1287.github.io/FirstFastPage//FirstFastPage/images/chart-preview.png" />
+<meta property="twitter:title" content="Hacks for Python" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-23T00:00:00-05:00","datePublished":"2022-08-23T00:00:00-05:00","description":"Page to show basic python skills learned by Arnav.","headline":"Hacks for Python","image":"https://muffinman1287.github.io/FirstFastPage//FirstFastPage/images/chart-preview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://muffinman1287.github.io/FirstFastPage//FirstFastPage/jupyter/2022/08/23/python-hacks.html"},"url":"https://muffinman1287.github.io/FirstFastPage//FirstFastPage/jupyter/2022/08/23/python-hacks.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/FirstFastPage/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://muffinman1287.github.io/FirstFastPage//FirstFastPage/feed.xml" title="My First Fastpage" /><link rel="shortcut icon" type="image/x-icon" href="/FirstFastPage/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/FirstFastPage/">My First Fastpage</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/FirstFastPage/search/">Search</a><a class="page-link" href="/FirstFastPage/about/">About Me</a><a class="page-link" href="/FirstFastPage/vocab/">Vocab</a><a class="page-link" href="/FirstFastPage/notes/">Notes</a><a class="page-link" href="/FirstFastPage/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Hacks for Python</h1><p class="page-description">Page to show basic python skills learned by Arnav.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-23T00:00:00-05:00" itemprop="datePublished">
+        Aug 23, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      4 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/FirstFastPage/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/MuffinMan1287/FirstFastPage/tree/master/_notebooks/2022-08-23-python-hacks.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/FirstFastPage/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/MuffinMan1287/FirstFastPage/master?filepath=_notebooks%2F2022-08-23-python-hacks.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/FirstFastPage/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/MuffinMan1287/FirstFastPage/blob/master/_notebooks/2022-08-23-python-hacks.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/FirstFastPage/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FMuffinMan1287%2FFirstFastPage%2Fblob%2Fmaster%2F_notebooks%2F2022-08-23-python-hacks.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/FirstFastPage/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Basic-Function">Basic Function </a></li>
+<li class="toc-entry toc-h1"><a href="#Running-quiz.py">Running quiz.py </a></li>
+<li class="toc-entry toc-h1"><a href="#My-Quiz">My Quiz </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-08-23-python-hacks.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Basic-Function">
+<a class="anchor" href="#Basic-Function" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basic Function<a class="anchor-link" href="#Basic-Function"> </a>
+</h1>
+<p>Printing the famous "Hello world" statement.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span> <span class="p">(</span><span class="s2">"Hello world"</span><span class="p">)</span> <span class="c1"># This is a comment. Allows one to explain their work.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello world
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Running-quiz.py">
+<a class="anchor" href="#Running-quiz.py" aria-hidden="true"><span class="octicon octicon-link"></span></a>Running quiz.py<a class="anchor-link" href="#Running-quiz.py"> </a>
+</h1>
+<p>Using the given code from the APCSP website and running the code.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">getpass</span><span class="o">,</span> <span class="nn">sys</span>
+
+<span class="k">def</span> <span class="nf">question_and_answer</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Question: "</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Answer: "</span> <span class="o">+</span> <span class="n">msg</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">question_with_response</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Question: "</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">msg</span>
+
+<span class="n">questions</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Hello, '</span> <span class="o">+</span> <span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">" running "</span> <span class="o">+</span> <span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"You will be asked "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" questions."</span><span class="p">)</span>
+<span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"Are you ready to take a test?"</span><span class="p">)</span>
+
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"What command is used to include other functions that were previously developed?"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"import"</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
+    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
+
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"What command is used to evaluate correct or incorrect response in this example?"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"if"</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
+    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
+
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"Each 'if' command contains an '_________' to determine a true or false condition?"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"expression"</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
+    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">" you scored "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct</span><span class="p">)</span> <span class="o">+</span><span class="s2">"/"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello, poonam running /opt/anaconda3/bin/python
+You will be asked 3 questions.
+Question: Are you ready to take a test?
+Answer: Yes.
+Question: What command is used to include other functions that were previously developed?
+import is correct!
+Question: What command is used to evaluate correct or incorrect response in this example?
+if is correct!
+Question: Each 'if' command contains an '_________' to determine a true or false condition?
+expression is correct!
+poonam you scored 3/3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="My-Quiz">
+<a class="anchor" href="#My-Quiz" aria-hidden="true"><span class="octicon octicon-link"></span></a>My Quiz<a class="anchor-link" href="#My-Quiz"> </a>
+</h1>
+<p>The quiz which I have created, based on the functions learned in the lesson. Takes advantage of str() to convert floats(numbers) to strings. The use of .lower() also helps to make sure any capitalization configuration of the answer will be marked as correct.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">getpass</span><span class="o">,</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">math</span> <span class="c1"># Getting necessary libraries to run the code.</span>
+
+<span class="c1"># Function with question and response structure.</span>
+<span class="k">def</span> <span class="nf">question</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Question: "</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span> <span class="c1"># Prints question in clear way.</span>
+    <span class="n">respond</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span> <span class="c1"># Gets an answer for the question from the user.</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Answer: "</span> <span class="o">+</span> <span class="n">respond</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">respond</span> <span class="c1"># Important to return.</span>
+    
+<span class="c1"># Variables</span>
+<span class="n">question_count</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">score</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># Running score on quiz.</span>
+
+<span class="c1"># Greeting</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Hello, '</span> <span class="o">+</span> <span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">"."</span><span class="p">)</span> 
+<span class="n">question</span><span class="p">(</span><span class="s2">"How has your day been?"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"I hope this quiz brightens your day."</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"You will answer "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">question_count</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" quiz questions."</span><span class="p">)</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">question</span><span class="p">(</span><span class="s2">"What do you call multiple lines of code?"</span><span class="p">)</span> <span class="c1"># 1</span>
+<span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"sequence"</span><span class="p">:</span> <span class="c1"># Lower helps to include all variations of the answer.</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Correct!"</span><span class="p">)</span>
+    <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># Adds 1 point to the score.</span>
+<span class="k">else</span><span class="p">:</span> <span class="c1"># When question answer is incorrect.</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Incorrect."</span><span class="p">)</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">question</span><span class="p">(</span><span class="s2">"How do you get a message from the user?"</span><span class="p">)</span> <span class="c1"># 2</span>
+<span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"input"</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Correct!"</span><span class="p">)</span>
+    <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Incorrect."</span><span class="p">)</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">question</span><span class="p">(</span><span class="s2">"Are numbers a string? Yes or No"</span><span class="p">)</span> <span class="c1"># 3</span>
+<span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"no"</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Correct!"</span><span class="p">)</span>
+    <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Incorrect."</span><span class="p">)</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">question</span><span class="p">(</span><span class="s2">"What does a function take in?"</span><span class="p">)</span> <span class="c1"># 4</span>
+<span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"parameter"</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Correct!"</span><span class="p">)</span>
+    <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Incorrect."</span><span class="p">)</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">question</span><span class="p">(</span><span class="s2">"If the if portion of a code is not met, what runs?"</span><span class="p">)</span> <span class="c1"># 5</span>
+<span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"else"</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Correct!"</span><span class="p">)</span>
+    <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Incorrect."</span><span class="p">)</span>
+
+<span class="c1"># Function for finding percent.</span>
+<span class="k">def</span> <span class="nf">grade</span><span class="p">(</span><span class="n">sco</span><span class="p">,</span> <span class="n">quests</span><span class="p">):</span> 
+    <span class="n">percent</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">*</span> <span class="nb">float</span><span class="p">(</span><span class="n">sco</span><span class="p">)</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">quests</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">percent</span>
+
+<span class="n">quiz_percentage</span> <span class="o">=</span> <span class="n">grade</span><span class="p">(</span><span class="n">score</span><span class="p">,</span> <span class="n">question_count</span><span class="p">)</span> <span class="c1"># Defining variable</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"You got "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">score</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" of "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">question_count</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" questions correct."</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Your score is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">quiz_percentage</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"%."</span><span class="p">)</span> <span class="c1"># Final print statement with score, as a percentage.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello, poonam.
+Question: How has your day been?
+Answer: Great!
+I hope this quiz brightens your day.
+You will answer 5 quiz questions.
+Question: What do you call multiple lines of code?
+Answer: SEQUEncE
+Correct!
+Question: How do you get a message from the user?
+Answer: InPUT
+Correct!
+Question: Are numbers a string? Yes or No
+Answer: yes
+Incorrect.
+Question: What does a function take in?
+Answer: parameter
+Correct!
+Question: If the if portion of a code is not met, what runs?
+Answer: Else
+Correct!
+You got 4 of 5 questions correct.
+Your score is 80.0%.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Running the quiz, we can see it can correctly see if the user types in the right answer or not. Additionally, the code correctly grades the quiz, giving both the number of questions correct and the percentage.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="MuffinMan1287/FirstFastPage"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/FirstFastPage/jupyter/2022/08/23/python-hacks.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/FirstFastPage/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/FirstFastPage/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/FirstFastPage/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Fastpage project for AP CSP by Arnav</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/MuffinMan1287" target="_blank" title="MuffinMan1287"><svg class="svg-icon grey"><use xlink:href="/FirstFastPage/assets/minima-social-icons.svg#github"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
