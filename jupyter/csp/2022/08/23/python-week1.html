@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      6 min read
     
 </span></p>
 
@@ -312,6 +312,92 @@ poonam you scored 3/3
 <span class="nb">print</span><span class="p">(</span><span class="s2">"I hope this quiz brightens your day."</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"You will answer "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">question_count</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" quiz questions."</span><span class="p">)</span>
 
+<span class="n">list_question</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"What do you call multiple lines of code?"</span><span class="p">,</span> <span class="s2">"How do you get a message from the user?"</span><span class="p">,</span> <span class="s2">"Are numbers a string? Yes or No"</span><span class="p">,</span> <span class="s2">"What does a function take in?"</span><span class="p">,</span> <span class="s2">"If the if portion of a code is not met, what runs?"</span><span class="p">]</span>
+<span class="n">answer_key</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"sequence"</span><span class="p">,</span> <span class="s2">"input"</span><span class="p">,</span> <span class="s2">"no"</span><span class="p">,</span> <span class="s2">"parameter"</span><span class="p">,</span> <span class="s2">"else"</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">]:</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">question</span><span class="p">(</span><span class="n">list_question</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+    <span class="n">check</span> <span class="o">=</span> <span class="n">answer_key</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">check</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Correct!"</span><span class="p">)</span>
+        <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Incorrect."</span><span class="p">)</span>
+
+
+
+<span class="c1"># Function for finding percent.</span>
+<span class="k">def</span> <span class="nf">grade</span><span class="p">(</span><span class="n">sco</span><span class="p">,</span> <span class="n">quests</span><span class="p">):</span> 
+    <span class="n">percent</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">*</span> <span class="nb">float</span><span class="p">(</span><span class="n">sco</span><span class="p">)</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">quests</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">percent</span>
+
+<span class="n">quiz_percentage</span> <span class="o">=</span> <span class="n">grade</span><span class="p">(</span><span class="n">score</span><span class="p">,</span> <span class="n">question_count</span><span class="p">)</span> <span class="c1"># Defining variable</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"You got "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">score</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" of "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">question_count</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" questions correct."</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Your score is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">quiz_percentage</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"%."</span><span class="p">)</span> <span class="c1"># Final print statement with score, as a percentage.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello, poonam.
+Question: How has your day been?
+Answer: Great!
+I hope this quiz brightens your day.
+You will answer 5 quiz questions.
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/poonam/vscode/FirstFastPage-1/_notebooks/2022-08-23-python-hacks.ipynb Cell 7</span> in <span class="ansi-cyan-fg">&lt;cell line: 23&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/poonam/vscode/FirstFastPage-1/_notebooks/2022-08-23-python-hacks.ipynb#W6sZmlsZQ%3D%3D?line=20'&gt;21&lt;/a&gt;</span> answer_key = ["sequence", "input", "no", "parameter", "else"]
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/poonam/vscode/FirstFastPage-1/_notebooks/2022-08-23-python-hacks.ipynb#W6sZmlsZQ%3D%3D?line=22'&gt;23&lt;/a&gt;</span> for i in [0, 4]:
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/poonam/vscode/FirstFastPage-1/_notebooks/2022-08-23-python-hacks.ipynb#W6sZmlsZQ%3D%3D?line=23'&gt;24&lt;/a&gt;</span>     response = question(list_question(i))
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/poonam/vscode/FirstFastPage-1/_notebooks/2022-08-23-python-hacks.ipynb#W6sZmlsZQ%3D%3D?line=24'&gt;25&lt;/a&gt;</span>     check = answer_key(i)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/poonam/vscode/FirstFastPage-1/_notebooks/2022-08-23-python-hacks.ipynb#W6sZmlsZQ%3D%3D?line=25'&gt;26&lt;/a&gt;</span>     if response.lower() == check:
+
+<span class="ansi-red-fg">TypeError</span>: 'list' object is not callable</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">list_question</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"What do you call multiple lines of code?"</span><span class="p">,</span> <span class="s2">"How do you get a message from the user?"</span><span class="p">,</span> <span class="s2">"Are numbers a string? Yes or No"</span><span class="p">,</span> <span class="s2">"What does a function take in?"</span><span class="p">,</span> <span class="s2">"If the if portion of a code is not met, what runs?"</span><span class="p">]</span>
+<span class="n">list_answer</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"sequence"</span><span class="p">,</span> <span class="s2">"input"</span><span class="p">,</span> <span class="s2">"no"</span><span class="p">,</span> <span class="s2">"parameter"</span><span class="p">,</span> <span class="s2">"else"</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">list_question</span><span class="p">:</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">question</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">list_answer</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Correct!"</span><span class="p">)</span>
+        <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Incorrect."</span><span class="p">)</span>
+
+
 <span class="n">response</span> <span class="o">=</span> <span class="n">question</span><span class="p">(</span><span class="s2">"What do you call multiple lines of code?"</span><span class="p">)</span> <span class="c1"># 1</span>
 <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"sequence"</span><span class="p">:</span> <span class="c1"># Lower helps to include all variations of the answer.</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Correct!"</span><span class="p">)</span>
@@ -346,54 +432,9 @@ poonam you scored 3/3
     <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Incorrect."</span><span class="p">)</span>
-
-<span class="c1"># Function for finding percent.</span>
-<span class="k">def</span> <span class="nf">grade</span><span class="p">(</span><span class="n">sco</span><span class="p">,</span> <span class="n">quests</span><span class="p">):</span> 
-    <span class="n">percent</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">*</span> <span class="nb">float</span><span class="p">(</span><span class="n">sco</span><span class="p">)</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">quests</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">percent</span>
-
-<span class="n">quiz_percentage</span> <span class="o">=</span> <span class="n">grade</span><span class="p">(</span><span class="n">score</span><span class="p">,</span> <span class="n">question_count</span><span class="p">)</span> <span class="c1"># Defining variable</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"You got "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">score</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" of "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">question_count</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" questions correct."</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Your score is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">quiz_percentage</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"%."</span><span class="p">)</span> <span class="c1"># Final print statement with score, as a percentage.</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Hello, poonam.
-Question: How has your day been?
-Answer: Great!
-I hope this quiz brightens your day.
-You will answer 5 quiz questions.
-Question: What do you call multiple lines of code?
-Answer: SEQUEncE
-Correct!
-Question: How do you get a message from the user?
-Answer: InPUT
-Correct!
-Question: Are numbers a string? Yes or No
-Answer: yes
-Incorrect.
-Question: What does a function take in?
-Answer: parameter
-Correct!
-Question: If the if portion of a code is not met, what runs?
-Answer: Else
-Correct!
-You got 4 of 5 questions correct.
-Your score is 80.0%.
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -408,6 +449,94 @@ Your score is 80.0%.
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"What is the variable name/key?"</span><span class="p">,</span> <span class="s2">"value?"</span><span class="p">,</span> <span class="s2">"type?"</span><span class="p">,</span> <span class="s2">"primitive or collection, why?"</span><span class="p">)</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s2">"John Doe"</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"name"</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">()</span>
+
+
+<span class="c1"># variable of type integer</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"What is the variable name/key?"</span><span class="p">,</span> <span class="s2">"value?"</span><span class="p">,</span> <span class="s2">"type?"</span><span class="p">,</span> <span class="s2">"primitive or collection, why?"</span><span class="p">)</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">18</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"age"</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">age</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># variable of type float</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"What is the variable name/key?"</span><span class="p">,</span> <span class="s2">"value?"</span><span class="p">,</span> <span class="s2">"type?"</span><span class="p">,</span> <span class="s2">"primitive or collection, why?"</span><span class="p">)</span>
+<span class="n">score</span> <span class="o">=</span> <span class="mf">90.0</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"score"</span><span class="p">,</span> <span class="n">score</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">score</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># variable of type list (many values in one variable)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"What is variable name/key?"</span><span class="p">,</span> <span class="s2">"value?"</span><span class="p">,</span> <span class="s2">"type?"</span><span class="p">,</span> <span class="s2">"primitive or collection?"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"What is different about the list output?"</span><span class="p">)</span>
+<span class="n">langs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Python"</span><span class="p">,</span> <span class="s2">"JavaScript"</span><span class="p">,</span> <span class="s2">"Java"</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"langs"</span><span class="p">,</span> <span class="n">langs</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">langs</span><span class="p">),</span> <span class="s2">"length"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">langs</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"- langs[0]"</span><span class="p">,</span> <span class="n">langs</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">type</span><span class="p">(</span><span class="n">langs</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># variable of type dictionary (a group of keys and values)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"What is the variable name/key?"</span><span class="p">,</span> <span class="s2">"value?"</span><span class="p">,</span> <span class="s2">"type?"</span><span class="p">,</span> <span class="s2">"primitive or collection, why?"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"What is different about the dictionary output?"</span><span class="p">)</span>
+<span class="n">person</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"name"</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span>
+    <span class="s2">"age"</span><span class="p">:</span> <span class="n">age</span><span class="p">,</span>
+    <span class="s2">"score"</span><span class="p">:</span> <span class="n">score</span><span class="p">,</span>
+    <span class="s2">"langs"</span><span class="p">:</span> <span class="n">langs</span>
+<span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"person"</span><span class="p">,</span> <span class="n">person</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">person</span><span class="p">),</span> <span class="s2">"length"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">person</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'- person["name"]'</span><span class="p">,</span> <span class="n">person</span><span class="p">[</span><span class="s2">"name"</span><span class="p">],</span> <span class="nb">type</span><span class="p">(</span><span class="n">person</span><span class="p">[</span><span class="s2">"name"</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>What is the variable name/key? value? type? primitive or collection, why?
+name John Doe &lt;class 'str'&gt;
+
+What is the variable name/key? value? type? primitive or collection, why?
+age 18 &lt;class 'int'&gt;
+
+What is the variable name/key? value? type? primitive or collection, why?
+score 90.0 &lt;class 'float'&gt;
+
+What is variable name/key? value? type? primitive or collection?
+What is different about the list output?
+langs ['Python', 'JavaScript', 'Java'] &lt;class 'list'&gt; length 3
+- langs[0] Python &lt;class 'str'&gt;
+
+What is the variable name/key? value? type? primitive or collection, why?
+What is different about the dictionary output?
+person {'name': 'John Doe', 'age': 18, 'score': 90.0, 'langs': ['Python', 'JavaScript', 'Java']} &lt;class 'dict'&gt; length 4
+- person["name"] John Doe &lt;class 'str'&gt;
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
