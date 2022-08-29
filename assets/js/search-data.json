@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Trying Docx",
-            "content": "This file should appear as a post on the site. Is this bold? The usage of .docx files will be very useful for things like storing assignments, especially for other classes. . ![](/FirstFastPage/images/shrek.jpeg) . Shrek .",
+            "content": "This file should appear as a post on the site. Is this bold? The usage of .docx files will be very useful for things like storing assignments, especially for other classes. . images/shrek.jpeg . Shrek .",
             "url": "https://muffinman1287.github.io/FirstFastPage//FirstFastPage/2022/08/25/Trying-Docx.html",
             "relUrl": "/2022/08/25/Trying-Docx.html",
             "date": " • Aug 25, 2022"
