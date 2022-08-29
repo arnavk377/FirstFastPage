@@ -743,11 +743,13 @@ look at config file
 <a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
 </h1>
 <p><em>Is there anything we use to verify tools we install? Think about versions.</em></p>
-<p>Using the bash script, we can use --version to verify the tools which are used. For example, running the code in bash "python --version" will give us the version of python the user has installed. This helps to verify the tool has been set up, and tells the version, so the user can know if they want to update it.</p>
+<p>Using the bash script, we can use --version option for each of the tools to verify which version of the tool is installed. For example, executing the command <code>python --version</code> in bash will give us the version of python the user has installed. This helps to verify the tool that has been set up, and tells the version, so the user can know if they want to update it. Also, we can use <code>conda list</code> to check the programs and their versions.</p>
 <p><em>Is there anything we could verify with Anaconda?</em></p>
-<p>Yes.</p>
+<p>Using <code>conda list</code>, we can verify the programs installed. This is also useful to see what version of the program is installed.</p>
 <p><em>How would you update a repository?</em></p>
-<p>To update a repository, we can use <code>git pull</code> to pull the changes from the home repository. To do this call <code>cd $project</code>, and then run <code>git pull</code> to get the update.</p>
+<p>To update a remote repository with changes made to the local repository, we can use <code>git push</code> to push changes from a local repository to the remote repository. To update a local repository with changes made to the remote repository, we use <code>git pull</code> to pull the changes from the remote repository to the local repository. Additionally, git add and git commit are used to stage and commit changes.</p>
+<p><em>Really cool would be automating a procedure from installation.</em></p>
+<p>This can be done by writing and running programs using the Shell Script.</p>
 
 </div>
 </div>
