@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Python Week 2 | My First Fastpage</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Python Week 2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Learning about lists and dictionaries." />
+<meta property="og:description" content="Learning about lists and dictionaries." />
+<link rel="canonical" href="https://muffinman1287.github.io/FirstFastPage//FirstFastPage/jupyter/csp/2022/08/29/Python-Dictionaries.html" />
+<meta property="og:url" content="https://muffinman1287.github.io/FirstFastPage//FirstFastPage/jupyter/csp/2022/08/29/Python-Dictionaries.html" />
+<meta property="og:site_name" content="My First Fastpage" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-08-29T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Python Week 2" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-29T00:00:00-05:00","datePublished":"2022-08-29T00:00:00-05:00","description":"Learning about lists and dictionaries.","headline":"Python Week 2","mainEntityOfPage":{"@type":"WebPage","@id":"https://muffinman1287.github.io/FirstFastPage//FirstFastPage/jupyter/csp/2022/08/29/Python-Dictionaries.html"},"url":"https://muffinman1287.github.io/FirstFastPage//FirstFastPage/jupyter/csp/2022/08/29/Python-Dictionaries.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/FirstFastPage/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://muffinman1287.github.io/FirstFastPage//FirstFastPage/feed.xml" title="My First Fastpage" /><link rel="shortcut icon" type="image/x-icon" href="/FirstFastPage/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/FirstFastPage/">My First Fastpage</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/FirstFastPage/search/">Search</a><a class="page-link" href="/FirstFastPage/about/">About Me</a><a class="page-link" href="/FirstFastPage/vocab/">Vocab</a><a class="page-link" href="/FirstFastPage/gov/">AP Government</a><a class="page-link" href="/FirstFastPage/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Python Week 2</h1><p class="page-description">Learning about lists and dictionaries.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-29T00:00:00-05:00" itemprop="datePublished">
+        Aug 29, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/FirstFastPage/categories/#jupyter">jupyter</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/FirstFastPage/categories/#csp">csp</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/MuffinMan1287/FirstFastPage/tree/master/_notebooks/2022-08-29-Python-Dictionaries.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/FirstFastPage/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/MuffinMan1287/FirstFastPage/master?filepath=_notebooks%2F2022-08-29-Python-Dictionaries.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/FirstFastPage/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/MuffinMan1287/FirstFastPage/blob/master/_notebooks/2022-08-29-Python-Dictionaries.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/FirstFastPage/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FMuffinMan1287%2FFirstFastPage%2Fblob%2Fmaster%2F_notebooks%2F2022-08-29-Python-Dictionaries.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/FirstFastPage/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#Running-the-Code">Running the Code </a></li>
+<li class="toc-entry toc-h2"><a href="#Using-Append">Using Append </a></li>
+<li class="toc-entry toc-h2"><a href="#For-Loop-with-an-Index">For Loop with an Index </a></li>
+<li class="toc-entry toc-h2"><a href="#Reverse-Order">Reverse Order </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-08-29-Python-Dictionaries.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Running-the-Code">
+<a class="anchor" href="#Running-the-Code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Running the Code<a class="anchor-link" href="#Running-the-Code"> </a>
+</h2>
+<p>I ran the given code from the APCSP website. I hypothesize that strings, floats, and integers are primitive, as they are simpler, and usually one value. This means that dictionaries and lists are collections, as they are a collection of multiple values.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"What is the variable name/key?"</span><span class="p">,</span> <span class="s2">"value?"</span><span class="p">,</span> <span class="s2">"type?"</span><span class="p">,</span> <span class="s2">"primitive or collection, why?"</span><span class="p">)</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s2">"John Doe"</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"name"</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">()</span>
+
+
+<span class="c1"># variable of type integer</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"What is the variable name/key?"</span><span class="p">,</span> <span class="s2">"value?"</span><span class="p">,</span> <span class="s2">"type?"</span><span class="p">,</span> <span class="s2">"primitive or collection, why?"</span><span class="p">)</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">18</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"age"</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">age</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># variable of type float</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"What is the variable name/key?"</span><span class="p">,</span> <span class="s2">"value?"</span><span class="p">,</span> <span class="s2">"type?"</span><span class="p">,</span> <span class="s2">"primitive or collection, why?"</span><span class="p">)</span>
+<span class="n">score</span> <span class="o">=</span> <span class="mf">90.0</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"score"</span><span class="p">,</span> <span class="n">score</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">score</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># variable of type list (many values in one variable)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"What is variable name/key?"</span><span class="p">,</span> <span class="s2">"value?"</span><span class="p">,</span> <span class="s2">"type?"</span><span class="p">,</span> <span class="s2">"primitive or collection?"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"What is different about the list output?"</span><span class="p">)</span>
+<span class="n">langs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Python"</span><span class="p">,</span> <span class="s2">"JavaScript"</span><span class="p">,</span> <span class="s2">"Java"</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"langs"</span><span class="p">,</span> <span class="n">langs</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">langs</span><span class="p">),</span> <span class="s2">"length"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">langs</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"- langs[0]"</span><span class="p">,</span> <span class="n">langs</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">type</span><span class="p">(</span><span class="n">langs</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># variable of type dictionary (a group of keys and values)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"What is the variable name/key?"</span><span class="p">,</span> <span class="s2">"value?"</span><span class="p">,</span> <span class="s2">"type?"</span><span class="p">,</span> <span class="s2">"primitive or collection, why?"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"What is different about the dictionary output?"</span><span class="p">)</span>
+<span class="n">person</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"name"</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span>
+    <span class="s2">"age"</span><span class="p">:</span> <span class="n">age</span><span class="p">,</span>
+    <span class="s2">"score"</span><span class="p">:</span> <span class="n">score</span><span class="p">,</span>
+    <span class="s2">"langs"</span><span class="p">:</span> <span class="n">langs</span>
+<span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"person"</span><span class="p">,</span> <span class="n">person</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">person</span><span class="p">),</span> <span class="s2">"length"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">person</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'- person["name"]'</span><span class="p">,</span> <span class="n">person</span><span class="p">[</span><span class="s2">"name"</span><span class="p">],</span> <span class="nb">type</span><span class="p">(</span><span class="n">person</span><span class="p">[</span><span class="s2">"name"</span><span class="p">]))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">langs</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># Will output "Java"</span>
+<span class="nb">print</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>What is the variable name/key? value? type? primitive or collection, why?
+name John Doe &lt;class 'str'&gt;
+
+What is the variable name/key? value? type? primitive or collection, why?
+age 18 &lt;class 'int'&gt;
+
+What is the variable name/key? value? type? primitive or collection, why?
+score 90.0 &lt;class 'float'&gt;
+
+What is variable name/key? value? type? primitive or collection?
+What is different about the list output?
+langs ['Python', 'JavaScript', 'Java'] &lt;class 'list'&gt; length 3
+- langs[0] Python &lt;class 'str'&gt;
+
+What is the variable name/key? value? type? primitive or collection, why?
+What is different about the dictionary output?
+person {'name': 'John Doe', 'age': 18, 'score': 90.0, 'langs': ['Python', 'JavaScript', 'Java']} &lt;class 'dict'&gt; length 4
+- person["name"] John Doe &lt;class 'str'&gt;
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Using-Append">
+<a class="anchor" href="#Using-Append" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using Append<a class="anchor-link" href="#Using-Append"> </a>
+</h2>
+<p>Using the <code>.append()</code> function to add information. Using InfoDb from the APCSP repository.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">InfoDb</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># InfoDB is a data structure with expected Keys and Values</span>
+
+<span class="c1"># Append to List a Dictionary of key/values related to a person and cars</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"John"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Mortensen"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"October 21"</span><span class="p">,</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"jmortensen@powayusd.com"</span><span class="p">,</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"2015-Fusion"</span><span class="p">,</span> <span class="s2">"2011-Ranger"</span><span class="p">,</span> <span class="s2">"2003-Excursion"</span><span class="p">,</span> <span class="s2">"1997-F350"</span><span class="p">,</span> <span class="s2">"1969-Cadillac"</span><span class="p">]</span>
+<span class="p">})</span>
+
+<span class="c1"># Append to List a 2nd Dictionary of key/values</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Sunny"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Naidu"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"August 2"</span><span class="p">,</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"Temecula"</span><span class="p">,</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"snaidu@powayusd.com"</span><span class="p">,</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"4Runner"</span><span class="p">]</span>
+<span class="p">})</span>
+
+<span class="c1"># My information</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Arnav"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Kanekar"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"July 3"</span><span class="p">,</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"**********@*****.***"</span><span class="p">,</span> <span class="c1"># Censored</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="s2">"None"</span>
+<span class="p">})</span>
+
+<span class="c1"># Print the data structure</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{'FirstName': 'John', 'LastName': 'Mortensen', 'DOB': 'October 21', 'Residence': 'San Diego', 'Email': 'jmortensen@powayusd.com', 'Owns_Cars': ['2015-Fusion', '2011-Ranger', '2003-Excursion', '1997-F350', '1969-Cadillac']}, {'FirstName': 'Sunny', 'LastName': 'Naidu', 'DOB': 'August 2', 'Residence': 'Temecula', 'Email': 'snaidu@powayusd.com', 'Owns_Cars': ['4Runner']}, {'FirstName': 'Arnav', 'LastName': 'Kanekar', 'DOB': 'July 3', 'Residence': 'San Diego', 'Email': '**********@*****.***', 'Owns_Cars': 'None'}]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="For-Loop-with-an-Index">
+<a class="anchor" href="#For-Loop-with-an-Index" aria-hidden="true"><span class="octicon octicon-link"></span></a>For Loop with an Index<a class="anchor-link" href="#For-Loop-with-an-Index"> </a>
+</h2>
+<p>Creating a list and using a for loop with indexes to print it.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cake_flavors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"chocolate"</span><span class="p">,</span> <span class="s2">"strawberry"</span><span class="p">,</span> <span class="s2">"vanilla"</span><span class="p">]</span> <span class="c1"># List</span>
+<span class="c1"># For loop, for index in list</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">cake_flavors</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="c1"># Print the flavor</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>chocolate
+strawberry
+vanilla
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Reverse-Order">
+<a class="anchor" href="#Reverse-Order" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reverse Order<a class="anchor-link" href="#Reverse-Order"> </a>
+</h2>
+<p><em>Would it be possible to output data in a reverse order?</em></p>
+<p><em>Are there other methods that can be performed on lists?</em></p>
+<p><em>Could you create new or add to dictionary data set?  Could you do it with input?</em></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">countdown</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="c1"># New list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">countdown</span><span class="p">)</span>
+<span class="n">countdown</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span> <span class="c1"># Reversing the list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">countdown</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[3, 2, 1]
+[1, 2, 3]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="MuffinMan1287/FirstFastPage"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/FirstFastPage/jupyter/csp/2022/08/29/Python-Dictionaries.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/FirstFastPage/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/FirstFastPage/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/FirstFastPage/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Fastpage project for AP CSP by Arnav</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/MuffinMan1287" target="_blank" title="MuffinMan1287"><svg class="svg-icon grey"><use xlink:href="/FirstFastPage/assets/minima-social-icons.svg#github"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
