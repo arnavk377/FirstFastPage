@@ -37,7 +37,7 @@ url: "https://MuffinMan1287.github.io/FirstFastPage/" # the base hostname & prot
 baseurl: "/FirstFastPage" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
-minima:
+midnight:
   social_links:
     twitter: 
     github: MuffinMan1287
@@ -101,7 +101,7 @@ plugins:
 paginate: 15
 paginate_path: /page:num/
 
-remote_theme: jekyll/minima
+remote_theme: jekyll/midnight
 
 titles_from_headings:
   enabled:     true
