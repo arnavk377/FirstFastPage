@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Using visual studio code to create a markdown.
-categories: [markdown]
+categories: [markdown, week0]
 title: VSCode Markdown
 ---
 

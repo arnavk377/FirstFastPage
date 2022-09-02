@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Learning to format images in markdown.
-categories: [markdown]
+categories: [markdown, week1]
 image: images/webbimage.jpg
 title: Using Images in Posts
 ---
