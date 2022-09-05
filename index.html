@@ -4,8 +4,6 @@ search_exclude: true
 image: delnortelogo.jpeg
 ---
 
-{{ site.time }}
-
 Arnav Kanekar's fastpage for AP CSP.
 
 Features documents related to and not related to CSP and coding.
@@ -14,11 +12,14 @@ Feel free to explore the site!
 
 My work for the trimester
 
+{% assign variable_name = week_count %}
+
 | Week | Hacks | Review Ticket |
 | ----------- | ----------- | ----------- |
-| 2 | Python Lists and Dictionaries, HTML Fragments, More on changing the format(ex. theme, dark mode) of the fastpage | Ticket |
-| 1 | Running and utilizing Bash, Python Basics, Adding more Pages to Fastpage and more formatting(ex. Image and docx file) | [Ticket](https://github.com/MuffinMan1287/FirstFastPage/issues/3) |
-| 0 | Setting up Fastpages, Creating a post, Creating a notebook | [Ticket](https://github.com/MuffinMan1287/FirstFastPage/issues/2) |
+| {% increment week_count %} | Setting up Fastpages, Creating a post, Creating a notebook | [Ticket](https://github.com/MuffinMan1287/FirstFastPage/issues/2) |
+| {% increment week_count %} | Running and utilizing Bash, Python Basics, Adding more Pages to Fastpage and more formatting(ex. Image and docx file) | [Ticket](https://github.com/MuffinMan1287/FirstFastPage/issues/3) |
+| {% increment week_count %} | Python Lists and Dictionaries, HTML Fragments, More on changing the format(ex. theme, dark mode) of the fastpage | Ticket |
+
 
 ![]({{ site.baseurl }}/images/delnortelogo.jpeg "DNHS")
 
