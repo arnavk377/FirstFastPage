@@ -2,9 +2,9 @@ $high-emph: rgba(white, 0.87);
 $med-emph: rgba(white, 0.69); //Noicee
 $low-emph: rgba(white, 0.38);
 $dark-grey : #121212; 
-$navy-blue : #27285C
-// $dark-grey : #1F1B24;
-$overlay: mix($navy-blue, white, 95%);
+$navy-blue : #27285C;
+// $navy-blue : #27285C;
+$overlay: mix($navy-blue, rgb(39, 40, 92), 95%);
 $overlay-light: mix($dark-grey, white, 86%);
 
 html, body, input, textarea, select, button {   
