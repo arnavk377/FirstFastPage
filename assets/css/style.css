@@ -427,7 +427,7 @@ pre code { font-size: 15px !important; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-html, body, input, textarea, select, button { color: rgba(255, 255, 255, 0.87) !important; background-color: #121212 !important; }
+html, body, input, textarea, select, button { color: rgba(255, 255, 255, 0.87) !important; background-color: #27285C !important; }
 
 a { color: #4bbaff !important; }
 
@@ -435,11 +435,11 @@ a:hover { color: rgba(255, 255, 255, 0.87) !important; }
 
 .site-title, .site-title:visited, .site-nav, .page-link { color: rgba(255, 255, 255, 0.87) !important; }
 
-.site-nav { background-color: #121212; border-color: #333333; }
+.site-nav { background-color: #27285C; border-color: #333333; }
 
 * { scrollbar-color: #121212 #333333; }
 
-pre, code { border-color: #333333; background-color: #1e1e1e; }
+pre, code { border-color: #333333; background-color: #27285c; }
 
 .page-description { color: rgba(255, 255, 255, 0.69); }
 
@@ -447,11 +447,11 @@ pre, code { border-color: #333333; background-color: #1e1e1e; }
 
 .post-content p, .post-content li { color: rgba(255, 255, 255, 0.69); }
 
-.btn { background-color: #1e1e1e !important; color: rgba(255, 255, 255, 0.87) !important; border-color: #333333 !important; }
+.btn { background-color: #27285c !important; color: rgba(255, 255, 255, 0.87) !important; border-color: #333333 !important; }
 
 .btn:hover { background-color: #121212 !important; }
 
-table th { background-color: #1e1e1e; border-color: #333333; color: rgba(255, 255, 255, 0.87); }
+table th { background-color: #27285c; border-color: #333333; color: rgba(255, 255, 255, 0.87); }
 
 table td { background-color: #121212; border-color: #333333; color: rgba(255, 255, 255, 0.69); }
 
@@ -459,7 +459,7 @@ table td { background-color: #121212; border-color: #333333; color: rgba(255, 25
 
 canvas { filter: invert(100%); }
 
-.post-list > li > div { box-shadow: none !important; background-color: #1e1e1e; border: none !important; }
+.post-list > li > div { box-shadow: none !important; background-color: #27285c; border: none !important; }
 
 li .post-meta-description { color: rgba(255, 255, 255, 0.69) !important; }
 
