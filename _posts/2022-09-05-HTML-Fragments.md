@@ -16,6 +16,12 @@ The original theme of the site is minima, but I experimented with changing it to
 The boxes which are around the articles seem to not have been there(with minima), and I don't know if that was supposed to happen when changing the theme to Merlot. The preview images were very large, instead of the small ones which minima has. Also, the GitHub user button did not seem to work.
 It can be seen that minima is the optimized theme for Fastpages.
 
+# Customizing the Fastpage Site
+
+I experimented with dark mode on the site, as well as changing the color of dark mode from black to a different color. It is a neat way to customize the site, but I think I will stick with the regular dark mode for now.
+
+![]({{ site.baseurl }}/images/Using_colors.png "Fancy colors.")
+
 # Time Box Fragments
 
 I have created a time box on the [frontpage](https://muffinman1287.github.io/FirstFastPage/) describing what I have done for the week, and linked the review ticket.
