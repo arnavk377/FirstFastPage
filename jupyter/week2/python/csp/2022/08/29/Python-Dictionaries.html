@@ -137,12 +137,12 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Using-Append">Using Append </a></li>
 <li class="toc-entry toc-h2"><a href="#For-Loops">For Loops </a></li>
 <li class="toc-entry toc-h2"><a href="#For-Loop-with-an-Index">For Loop with an Index </a></li>
-<li class="toc-entry toc-h2"><a href="#More-Tools">More Tools </a></li>
+<li class="toc-entry toc-h2"><a href="#Using-the-While-Loop-and-Inputs">Using the While Loop and Inputs </a></li>
+<li class="toc-entry toc-h2"><a href="#Recursion">Recursion </a></li>
+<li class="toc-entry toc-h2"><a href="#Tools">Tools </a></li>
 <li class="toc-entry toc-h1"><a href="#Reverse-Order">Reverse Order </a></li>
 <li class="toc-entry toc-h1"><a href="#Sort-and-Set">Sort and Set </a>
 <ul>
-<li class="toc-entry toc-h2"><a href="#Using-the-While-Loop-and-Inputs">Using the While Loop and Inputs </a></li>
-<li class="toc-entry toc-h2"><a href="#Recursion">Recursion </a></li>
 <li class="toc-entry toc-h2"><a href="#Quiz">Quiz </a></li>
 </ul>
 </li>
@@ -350,7 +350,7 @@ person {'name': 'John Doe', 'age': 18, 'score': 90.0, 'langs': ['Python', 'JavaS
 <h2 id="For-Loops">
 <a class="anchor" href="#For-Loops" aria-hidden="true"><span class="octicon octicon-link"></span></a>For Loops<a class="anchor-link" href="#For-Loops"> </a>
 </h2>
-<p>Using a for loop through iterate through a list.</p>
+<p>Using a for loop to iterate through a list.</p>
 
 </div>
 </div>
@@ -443,8 +443,119 @@ vanilla
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="More-Tools">
-<a class="anchor" href="#More-Tools" aria-hidden="true"><span class="octicon octicon-link"></span></a>More Tools<a class="anchor-link" href="#More-Tools"> </a>
+<h2 id="Using-the-While-Loop-and-Inputs">
+<a class="anchor" href="#Using-the-While-Loop-and-Inputs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using the While Loop and Inputs<a class="anchor-link" href="#Using-the-While-Loop-and-Inputs"> </a>
+</h2>
+<p>This demonstrates usage of the while loop. The while loop calls a function as long as a certain condition is met. This is also another example of creating dictionaries using inputs.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">meals</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1"># empty dictionary</span>
+
+<span class="n">length</span> <span class="o">=</span> <span class="mi">4</span>
+
+<span class="c1"># runs as long as there are less than 4 items in the dictionary</span>
+<span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">meals</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">length</span><span class="p">:</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Name a food."</span><span class="p">)</span>
+    <span class="n">rating</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"How would you rate the meal on a scale of 1 - 10?"</span><span class="p">)</span>
+    <span class="n">meals</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">rating</span> <span class="c1"># determines the key and the value</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">meals</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{'pineapple pizza': '5', 'chicken alfredo': '8', 'fried chicken': '10', 'mango': '9'}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Recursion">
+<a class="anchor" href="#Recursion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Recursion<a class="anchor-link" href="#Recursion"> </a>
+</h2>
+<p>Recursive functions are helpful when a collection has many items which are added to it.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">recursive_sum</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span> <span class="c1"># Defining the function</span>
+    <span class="n">quan</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span> <span class="c1"># Determining the list length</span>
+    <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># sum variable</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># variable for recursion</span>
+    <span class="c1"># makes sure the function repeats</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">!=</span> <span class="n">quan</span><span class="p">:</span>
+        <span class="nb">sum</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="nb">sum</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="c1"># when the recursion is over</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">quan</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+
+<span class="c1"># testing the recursive function</span>
+<span class="n">squares</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
+<span class="n">recursive_sum</span><span class="p">(</span><span class="n">squares</span><span class="p">)</span>
+<span class="n">random_numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">42</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">114</span><span class="p">]</span>
+<span class="n">recursive_sum</span><span class="p">(</span><span class="n">random_numbers</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>55
+225
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Tools">
+<a class="anchor" href="#Tools" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tools<a class="anchor-link" href="#Tools"> </a>
 </h2>
 <p>Using other capabilities to organize lists. These are very useful tools.</p>
 
@@ -579,117 +690,6 @@ vanilla
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Using-the-While-Loop-and-Inputs">
-<a class="anchor" href="#Using-the-While-Loop-and-Inputs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using the While Loop and Inputs<a class="anchor-link" href="#Using-the-While-Loop-and-Inputs"> </a>
-</h2>
-<p>This demonstrates usage of the while loop. The while loop calls a function as long as a certain condition is met. This is also another example of creating dictionaries using inputs.</p>
-
-</div>
-</div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">meals</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1"># empty dictionary</span>
-
-<span class="n">length</span> <span class="o">=</span> <span class="mi">4</span>
-
-<span class="c1"># runs as long as there are less than 4 items in the dictionary</span>
-<span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">meals</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">length</span><span class="p">:</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Name a food."</span><span class="p">)</span>
-    <span class="n">rating</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"How would you rate the meal on a scale of 1 - 10?"</span><span class="p">)</span>
-    <span class="n">meals</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">rating</span> <span class="c1"># determines the key and the value</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">meals</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>{'pineapple pizza': '5', 'chicken alfredo': '8', 'fried chicken': '10', 'mango': '9'}
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Recursion">
-<a class="anchor" href="#Recursion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Recursion<a class="anchor-link" href="#Recursion"> </a>
-</h2>
-<p>Recursive functions are helpful when a collection has many items which are added to it.</p>
-
-</div>
-</div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">recursive_sum</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span> <span class="c1"># Defining the function</span>
-    <span class="n">quan</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span> <span class="c1"># Determining the list length</span>
-    <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># sum variable</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># variable for recursion</span>
-    <span class="c1"># makes sure the function repeats</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">!=</span> <span class="n">quan</span><span class="p">:</span>
-        <span class="nb">sum</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="nb">sum</span>
-        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="c1"># when the recursion is over</span>
-    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">quan</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
-
-<span class="c1"># testing the recursive function</span>
-<span class="n">squares</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
-<span class="n">recursive_sum</span><span class="p">(</span><span class="n">squares</span><span class="p">)</span>
-<span class="n">random_numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">42</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">114</span><span class="p">]</span>
-<span class="n">recursive_sum</span><span class="p">(</span><span class="n">random_numbers</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>55
-225
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
