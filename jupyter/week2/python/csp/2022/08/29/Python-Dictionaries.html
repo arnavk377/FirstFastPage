@@ -498,7 +498,7 @@ vanilla
 <h2 id="Recursion">
 <a class="anchor" href="#Recursion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Recursion<a class="anchor-link" href="#Recursion"> </a>
 </h2>
-<p>Recursive functions are helpful when a collection has many items which are added to it.</p>
+<p>Recursive functions are helpful, but can be inefficient since it keeps on recalling the function.</p>
 
 </div>
 </div>
@@ -510,23 +510,17 @@ vanilla
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">recursive_sum</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span> <span class="c1"># Defining the function</span>
-    <span class="n">quan</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span> <span class="c1"># Determining the list length</span>
-    <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># sum variable</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># variable for recursion</span>
-    <span class="c1"># makes sure the function repeats</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">!=</span> <span class="n">quan</span><span class="p">:</span>
-        <span class="nb">sum</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="nb">sum</span>
-        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="c1"># when the recursion is over</span>
-    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">quan</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">i</span><span class="p">):</span> <span class="c1"># defining the function</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="c1"># will not recall function</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># will not recall function</span>
+        <span class="k">return</span> <span class="n">i</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">i</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># recalls the function, but at lesser value</span>
 
-<span class="c1"># testing the recursive function</span>
-<span class="n">squares</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
-<span class="n">recursive_sum</span><span class="p">(</span><span class="n">squares</span><span class="p">)</span>
-<span class="n">random_numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">42</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">114</span><span class="p">]</span>
-<span class="n">recursive_sum</span><span class="p">(</span><span class="n">random_numbers</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">factorial</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">factorial</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">factorial</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -539,8 +533,9 @@ vanilla
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>55
-225
+<pre>120
+1
+1
 </pre>
 </div>
 </div>
