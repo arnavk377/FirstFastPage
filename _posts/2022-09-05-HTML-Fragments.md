@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: Using HTML fragments and learning about ways to format Fastpages.
 categories: [markdown, week2]
-image: 
+image: images/Using_colors.png
 title: Using HTML Fragments
 ---
 
