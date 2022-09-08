@@ -30,7 +30,7 @@ On each "correct screen", we plan to have an image which showcases an image of v
 
 After the user answers all the questions, we will take them to a final screen, which could show their score or take them to the beginning of the quiz if they want to retake it. 
 
-Plan of Screens
+Plan of Screens:
 Home Screen -> Question 1 Screen -> Correct/Wrong Screen -> Question 2 Screen -> Correct/Wrong Screen -> Question 3 Screen -> Correct/Wrong Screen -> Final Screen
 
 ## The Quiz.
