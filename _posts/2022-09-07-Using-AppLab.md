@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: Learning about the app development program on Code.org.
 categories: [markdown, week3]
-image: 
+image: images/codeorglogo.png
 title: Using Applab
 ---
 
