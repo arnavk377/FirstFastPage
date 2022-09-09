@@ -46,3 +46,8 @@ Here is the [link](url) to our quiz.
 # What We Learned
 
 Using AppLab was a very cool experience. It really helped us learn more about Javascript, with an easy to use interface. We liked using the blocks, but the ability to check out the code in true Javascript helped us see basic Javascript programming. This project helped us learn about user interaction and how Javascript is a powerful language for that.
+
+# Extra Projects
+
+We decided to test out other features in App Lab. We did this by creating a simple game of tic tac toe. We learned about defining variables, altering images, and even adding sound! We also continued practicing Javascript, and using the debug console as a way to help us see where our code was going wrong.
+Link -> [Tic Tac Toe](https://studio.code.org/projects/applab/T_bkuKZOdBX80xzi0K-suBOs3DQ5sSz4G4UhNvnHQpc)
