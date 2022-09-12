@@ -33,6 +33,20 @@ After the user answers all the questions, we will take them to a final screen, w
 Plan of Screens:
 Home Screen -> Question 1 Screen -> Correct/Wrong Screen -> Question 2 Screen -> Correct/Wrong Screen -> Question 3 Screen -> Correct/Wrong Screen -> Final Screen
 
+## Our Code
+We utilized a lot of onEvent statements in our code, as they would let us know if a specific button has been clicked. 
+
+![]({{ site.baseurl }}/images/oneventcode.png "Usage of onEvent")
+
+Additionally, to get a score, we defined a variable and added to it every time the user selected a correct answer.
+
+We created a variable results box, which is varied due to the display of the score. We did this since each user would have a different score.
+
+![]({{ site.baseurl }}/images/endcode.png "Printing the")
+
+The playSound button adds a fun little twist, as it plays custom audio to the user after completion of the quiz.
+
+We often looked at the code in the text form to help us build familiarity with Javascript. The debug console also helped us a lot in figuring out our mistakes, and we will use it a lot in future projects. We wonder if the debug console can be used in other languages, like Python.
 ## The Quiz.
 
 Here is the [link](https://studio.code.org/projects/applab/XQDoFH4lQJ9XyvKTX34oz4aBnAACoDDk19sIDwJ3L0U) to our quiz.
@@ -50,7 +64,7 @@ We also had some trouble with formatting, and centering the images and items on 
 Using AppLab was a very cool experience. It really helped us learn more about Javascript, with an easy to use interface. We liked using the blocks, but the ability to check out the code in true Javascript helped us see basic Javascript programming. This project helped us learn about user interaction and how Javascript is a powerful language for that.
 
 We also got a preview of how to use images in Javascript. We saw the positioning system, but there still a lot to learn about how to call the shapes in real code. 
-# Extra Projects
+# Extra Project
 
-We decided to test out other features in App Lab. We did this by creating a simple game of tic tac toe. We learned about defining variables, altering images, and even adding sound! We also continued practicing Javascript, and using the debug console as a way to help us see where our code was going wrong.
+We decided to test out other features in App Lab. We did this by creating a simple game of tic tac toe. We learned about defining variables, altering images, and even adding sound! The program allows two users to play a game of tic tac toe, and allows the user the option to reset the scoreboard without restarting the app. We also continued practicing Javascript, and using the debug console as a way to help us see where our code was going wrong.
 Link -> [Tic Tac Toe](https://studio.code.org/projects/applab/T_bkuKZOdBX80xzi0K-suBOs3DQ5sSz4G4UhNvnHQpc)
