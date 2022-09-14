@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Flask Repository Test",
-            "content": "Problems . While running main.py, I faced some challenges in creating the website. For me, the flask_login and flask_migrate, were not being recognized. The problem turned out to be that the 2 programs were not in the right Python version. .",
+            "content": "Problems . While running main.py, I faced some challenges in creating the website. For me, the flask_login and flask_migrate, were not being recognized. The problem turned out to be that the 2 programs were not in the right Python version. To solve this, I had to make sure that the flask_login and flask_migrate were downloaded in the correct Python. . Hacks . I changed the text in the stub.html file. . . I also worked on a group repository with my team. .",
             "url": "https://muffinman1287.github.io/FirstFastPage//FirstFastPage/markdown/week4/csp/2022/09/14/Flask-Repository-Test.html",
             "relUrl": "/markdown/week4/csp/2022/09/14/Flask-Repository-Test.html",
             "date": " • Sep 14, 2022"
