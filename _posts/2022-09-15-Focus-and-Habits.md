@@ -9,8 +9,21 @@ title: Focus and Habits
 
 ## Notes from the videos
 
+- Stress: a state of mental or emotional strain or tension resulting from adverse or very demanding circumstances
 - Stress is prominent in many places
-- 
+- Getting a good thing happen on one day usually does not change our happiness multiple months down the road, so we should try to implement small changes in our life everyday.
+- Just because we know something, it does not mean it will benefit us unless we put it into practice.
+- Need to do different things, like how people do different exercises in the gym.
+- While we need a decent amount of material possessions(money, food, clothing, etc.), at a certain point, having bigger and better does not improve happiness levels.
+- Make **social connection**
+- Social connection: the feeling that you belong to a group and generally feel close to other people
+- Important to make time to spend with friends and family away from homework.
+- **Help others**
+- Helping others can help us by making us feel good about ourselves
+- **Treat yourself**
+- No matter how you treat yourself for accomplishments, you can gain important benefits.
+- **Make time for gratitude**
+- Show gratitude for your situation and the other people around you who help you.
 
 ## Gratitude
 
