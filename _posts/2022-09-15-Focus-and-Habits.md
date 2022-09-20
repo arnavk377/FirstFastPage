@@ -41,6 +41,8 @@ Goals can help an individual feel a sense of progress. I think goals are great w
 
 Goals I have:
 - Sleep by 11:00 everyday
+- Practice my instrument for at least 30 minutes each day
+- Work on college applications for at least 30 minutes each day
 - Minimize homework on the weekend(less specific)
 
-Goals can help us feel more organized, even we have a lot on our plate. This will help reduce stress levels in us. Especially with college application season, I think creating a list of small and specific goals related to application will allow me to be less stressed, feel more in control, and be happier.
+Goals can help us feel more organized, even we have a lot on our plate. This will help reduce stress levels in us. Especially with college application season, I think creating a list of small and specific goals related to applications will allow me to be less stressed, feel more in control, and be happier.
