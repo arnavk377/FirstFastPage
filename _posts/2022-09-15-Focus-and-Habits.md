@@ -7,7 +7,7 @@ image:
 title: Focus and Habits
 ---
 
-## Notes from the videos
+## Notes from the video
 
 - Stress: a state of mental or emotional strain or tension resulting from adverse or very demanding circumstances
 - Stress is prominent in many places
