@@ -18,3 +18,9 @@ I changed the text in the stub.html file.
 ![]({{ site.baseurl }}/images/RenamingStubby.png "Stubby Body")
 
 I also worked on a group repository with my team.
+
+## Other Stuff
+
+![]({{ site.baseurl }}/images/flaskchanges.png "Changed the Page")
+
+In addition, I learned a little bit about HTML. I added an image of Shrek to the webpage. I also changed the size and color of the heading on the page. On the left most box, I removed a highlight and added another description line.
