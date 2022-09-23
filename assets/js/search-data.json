@@ -249,19 +249,16 @@
   
 
   
-
+      ,"page5": {
+          "title": "Stub",
+          "content": "| Overview | Tutorial | Calculator | Binary | Grades | Graph | Life | Snake | .",
+          "url": "https://muffinman1287.github.io/FirstFastPage//FirstFastPage/stub/",
+          "relUrl": "/stub/",
+          "date": ""
+      }
+      
   
 
-  
-  
-
-  
-  
-
-  
-  
-
-  
   
 
   
@@ -270,7 +267,21 @@
   
 
   
-      ,"page13": {
+  
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+      ,"page14": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://muffinman1287.github.io/FirstFastPage//FirstFastPage/robots.txt",
