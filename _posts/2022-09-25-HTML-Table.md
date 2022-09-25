@@ -2,12 +2,12 @@
 toc: true
 layout: post
 description: HTML and Javascript Table
-categories: [markdown, week4, csp, js]
+categories: [week5, csp, js]
 image: 
 title: HTML and JS Table
 ---
 
-<script>
+<script type = "text/javascript">
 function dealership(name, brand, price) {
     this.name = name;
     this.brand = brand;
@@ -22,7 +22,6 @@ var students = [
 ];
 
 table.prototype._toHtml = function() {
-  // HTML Style is build using inline structure
   var style = (
     "display:inline-block;"
   );
@@ -64,7 +63,7 @@ function myFunction() {
   document.getElementById("mine").style.color = "blue";       
 }
 
-$$.html(dealership._toHtml());
+console.log(dealership._toHtml());
 
 </script>
 
