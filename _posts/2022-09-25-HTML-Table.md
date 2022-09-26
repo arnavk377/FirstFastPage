@@ -16,6 +16,7 @@ function table() {
     "box-shadow: 0.8em 0.4em 0.4em grey;"
   );
   // HTML Body of Table is build as a series of concatenations (+=)
+  var id = "table_build";
   var body = "";
   // Heading for Array Columns
   body += "<tr>";
@@ -51,7 +52,7 @@ function table() {
    // Build and HTML fragment of div, table, table body
   return (
     "<div style='" + style + "'>" +
-      "<table>" +
+      "<table" + id + ">" +
         body +
       "</table>" +
     "</div>"
@@ -59,7 +60,7 @@ function table() {
 
 }
 
-$$.html(table());
+
 
 function myFunction() {
   document.getElementById("mine").style.fontSize = "35px"; 
@@ -67,8 +68,11 @@ function myFunction() {
 }
 
 
-
 </script>
+
+<button type="button"
+onclick="document.getElementById('table_build').innerHTML = table(yes)">
+Click me to display Table.</button>
 
 
 
