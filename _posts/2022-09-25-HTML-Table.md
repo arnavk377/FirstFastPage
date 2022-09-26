@@ -6,6 +6,8 @@ categories: [week5, csp, js]
 image: 
 title: HTML and JS Table
 ---
+<p id = "paragraph">
+</p>
 
 <script type = "text/javascript">
 
@@ -16,7 +18,6 @@ function table() {
     "box-shadow: 0.8em 0.4em 0.4em grey;"
   );
   // HTML Body of Table is build as a series of concatenations (+=)
-  var id = "table_build";
   var body = "";
   // Heading for Array Columns
   body += "<tr>";
@@ -52,7 +53,6 @@ function table() {
    // Build and HTML fragment of div, table, table body
   return (
     "<div style='" + style + "'>" +
-      "<table" + id + ">" +
         body +
       "</table>" +
     "</div>"
@@ -61,17 +61,10 @@ function table() {
 }
 
 
-
-function myFunction() {
-  document.getElementById("mine").style.fontSize = "35px"; 
-  document.getElementById("mine").style.color = "blue";       
-}
-
-
 </script>
 
 <button type="button"
-onclick="document.getElementById('table_build').innerHTML = table()">
+onclick="document.getElementById('paragraph').innerHTML = table()">
 Click me to display table.</button>
 
 
