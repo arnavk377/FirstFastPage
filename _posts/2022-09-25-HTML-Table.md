@@ -9,7 +9,7 @@ title: HTML and JS Table
 
 <script type = "text/javascript">
 
-function table(yes) {
+function table() {
   var style = (
     "display:inline-block;" +
     "border: 2px solid grey;" +
