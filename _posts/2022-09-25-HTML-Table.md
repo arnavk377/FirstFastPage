@@ -71,8 +71,8 @@ function myFunction() {
 </script>
 
 <button type="button"
-onclick="document.getElementById('table_build').innerHTML = table(yes)">
-Click me to display Table.</button>
+onclick="document.getElementById('table_build').innerHTML = table()">
+Click me to display table.</button>
 
 
 
