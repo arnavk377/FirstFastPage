@@ -103,43 +103,45 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
 </ul><script type="text/javascript">
-function dealership(name, brand, price) {
-    this.name = name;
-    this.brand = brand;
-    this.price = price;
-}
 
-var students = [ 
-    new dealership("Chrion", "Bugatti", 3,825,000),
-    new dealership("Camry", "Toyota", 25,945),
-    new dealership("Model 48(From 1935)", "Ford", 64,995),
-    new dealership("Wraith", "Rolls Royce", 635,000),
-];
-
-table.prototype._toHtml = function() {
+function table(yes) {
   var style = (
-    "display:inline-block;"
+    "display:inline-block;" +
+    "border: 2px solid grey;" +
+    "box-shadow: 0.8em 0.4em 0.4em grey;"
   );
-
   // HTML Body of Table is build as a series of concatenations (+=)
   var body = "";
   // Heading for Array Columns
   body += "<tr>";
-  body += "<th><mark>" + "Car Name" + "</mark></th>";
-  body += "<th><mark>" + "Brand" + "</mark></th>";
-  body += "<th><mark>" + "Price" + "</mark></th>";
+  body += "<th>" + "Car Name" + "</th>";
+  body += "<th>" + "Brand" + "</th>";
+  body += "<th>" + "Price" + "</th>";
   body += "</tr>";
-  // Data of Array, iterate through each row of compsci.classroom 
-  for (var row of dealership) {
-    // tr for each row, a new line
-    body += "<tr>";
-    // td for each column of data
-    body += "<td>" + row.name + "</td>";
-    body += "<td>" + row.brand + "</td>";
-    body += "<td>" + row.price + "</td>";
-    // tr to end line
-    body += "<tr>";
-  }
+  
+  body += "<tr>";
+  body += "<td>" + "Chrion" + "</td>";
+  body += "<td>" + "Bugatti" + "</td>";
+  body += "<td>" + "$3,825,000" + "</td>";
+  body += "</tr>";
+
+  body += "<tr>";
+  body += "<td>" + "Camry" + "</td>";
+  body += "<td>" + "Toyota" + "</td>";
+  body += "<td>" + "$25,945" + "</td>";
+  body += "</tr>";
+
+  body += "<tr>";
+  body += "<td>" + "Model 48(From 1935)" + "</td>";
+  body += "<td>" + "Ford" + "</td>";
+  body += "<td>" + "$64,995" + "</td>";
+  body += "</tr>";
+  
+  body += "<tr>";
+  body += "<td>" + "Wraith" + "</td>";
+  body += "<td>" + "Rolls Royce" + "</td>";
+  body += "<td>" + "$635,000" + "</td>";
+  body += "</tr>";
 
    // Build and HTML fragment of div, table, table body
   return (
@@ -150,19 +152,19 @@ table.prototype._toHtml = function() {
     "</div>"
   );
 
+}
 
-};
+$$.html(table());
 
 function myFunction() {
   document.getElementById("mine").style.fontSize = "35px"; 
   document.getElementById("mine").style.color = "blue";       
 }
 
-console.log(dealership._toHtml());
+
 
 </script>
 
-<center><button type="button" onclick="myFunction()" style="background: red">Click Me!</button></center>
 
   </div><a class="u-url" href="/FirstFastPage/week5/csp/js/2022/09/25/HTML-Table.html" hidden></a>
 </article>
