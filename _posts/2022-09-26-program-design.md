@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Big Idea 1 - Program Design and Development
-categories: [week5, csp, ap]
+categories: [week6, csp, ap]
 image: 
 title: Program Design and Development
 ---
