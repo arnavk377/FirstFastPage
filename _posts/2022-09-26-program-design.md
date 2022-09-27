@@ -22,7 +22,7 @@ title: Program Design and Development
 - Will describe how the program should work and what it will do
 - Developers often create prototypes and use an incremental process
 - Important to test the program(at micro level, at macro level, with user), and reflect on and revise program
-
+---
 - Program development usually requires input from multiple individuals
 - Big project: Many individuals
 - Components: Smaller groups or individuals
@@ -32,7 +32,7 @@ title: Program Design and Development
 - A program will oftentimes take parts from previous programs, such as code segments, procedures, and algorithms
 - Need to give credit to other individuals, state author name and source
 - Can create a form of a bibliography in documentation
-
+---
 - Documentation is often created by programmers
 - Documentation: written description of the function of a code segment, event, procedure, or program, and how it was developed
 - Purposes:
@@ -45,3 +45,8 @@ title: Program Design and Development
 - Can help efficiency, program purpose, and response to bugs
 - Documentation is often done through commenting
 - Good commenting helps with individual and group work
+---
+# Scores
+Here are my scores for the past 3 assignments.
+
+![]({{ site.baseurl }}/images/assignments.png "Scores")
