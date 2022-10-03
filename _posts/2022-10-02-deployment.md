@@ -3,9 +3,15 @@ toc: true
 layout: post
 description: Deploying my Flask Repository using AWS
 categories: [week6, csp]
-image: 
+image: images/deploy.jpeg
 title: Deployment
 ---
+
+![]({{ site.baseurl }}/images/deploy.jpeg "")
+
+# Curl
+
+I was able to use curl to display the HTML of my homepage.
 
 # Page using IP
 
