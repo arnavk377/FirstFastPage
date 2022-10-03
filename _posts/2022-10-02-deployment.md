@@ -11,7 +11,9 @@ title: Deployment
 
 # Curl
 
-I was able to use curl to display the HTML of my homepage.
+I was able to use curl to display the HTML of my homepage. This specific part of the curl showcases the custom card created on my Flask Repository.
+
+![]({{ site.baseurl }}/images/curl.png "Code")
 
 # Page using IP
 
