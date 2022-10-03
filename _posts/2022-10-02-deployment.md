@@ -7,7 +7,7 @@ image: images/deploy.jpeg
 title: Deployment
 ---
 
-![]({{ site.baseurl }}/images/deploy.jpeg "")
+![]({{ site.baseurl }}/images/deploy.jpeg)
 
 # Curl
 
