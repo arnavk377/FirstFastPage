@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Deploying my Flask Repository using AWS
-categories: [week7, csp]
+categories: [week6, csp]
 image: 
 title: Deployment
 ---
