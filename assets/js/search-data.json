@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Deployment",
-            "content": "Page using IP . I was able to upload my flask repository and page to the IP address associated with the EC2 instance. . . Changing the page . I was also able to change something on my repository, and then push the change to the page on the IP. . Before the change: . . If you look closely, you will learn to “Start with Hello!” . . It can be seen that these are both hosted on the same IP, but the pages are clearly different. It shows how easy it is to update and change a website. .",
+            "content": "![](/FirstFastPage/images/deploy.jpeg “”) . Curl . I was able to use curl to display the HTML of my homepage. . Page using IP . I was able to upload my flask repository and page to the IP address associated with the EC2 instance. . . Changing the page . I was also able to change something on my repository, and then push the change to the page on the IP. . Before the change: . . If you look closely, you will learn to “Start with Hello!” . . It can be seen that these are both hosted on the same IP, but the pages are clearly different. It shows how easy it is to update and change a website. .",
             "url": "https://muffinman1287.github.io/FirstFastPage//FirstFastPage/week6/csp/2022/10/02/deployment.html",
             "relUrl": "/week6/csp/2022/10/02/deployment.html",
             "date": " • Oct 2, 2022"
