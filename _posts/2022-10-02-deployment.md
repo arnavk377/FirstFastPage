@@ -34,3 +34,11 @@ If you look closely, you will learn to "Start with Hello!"
 ![]({{ site.baseurl }}/images/change1.png "Hello!")
 
 It can be seen that these are both hosted on the same IP, but the pages are clearly different. It shows how easy it is to update and change a website.
+
+# Using a Custom Domain
+
+Despite the problems with Freenom earlier, it began working, and I was able to use a custom domain and DNS service to host the repository.
+
+![]({{ site.baseurl }}/images/with_link.png "Domain!")
+
+If you look at the search bar, you can see that domain is not the IP address of the AWS instance, but a domain which I made. Here is the [link](http://arnavcspsite.tk/).
