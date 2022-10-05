@@ -15,6 +15,24 @@ I was able to use curl to display the HTML of my homepage. This specific part of
 
 ![]({{ site.baseurl }}/images/curl.png "Code")
 
+# sudo docker ps
+
+Here are the results in the terminal from running the command "sudo docker ps".
+
+![]({{ site.baseurl }}/images/sudops.png "SUDOOOOOOOO")
+
+# Group Repository
+
+Here is our group repository hosted on the IP address of the AWS instance.
+
+![]({{ site.baseurl }}/images/nginx-taal.png)
+
+Here is our group repository hosted on a custom domain through Freenom.
+
+![]({{ site.baseurl }}/images/taalhost.png)
+
+The link to our repository is taalsite.tk.
+
 # Page using IP
 
 I was able to upload my flask repository and page to the IP address associated with the EC2 instance.
