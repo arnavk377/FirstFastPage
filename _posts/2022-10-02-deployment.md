@@ -25,7 +25,7 @@ Here are the results in the terminal from running the command "sudo docker ps".
 
 Here is our group repository hosted on the IP address of the AWS instance.
 
-![]({{ site.baseurl }}/images/nginx-taal.PNG)
+![]({{ site.baseurl }}/images/nginx_taal.PNG)
 
 Here is our group repository hosted on a custom domain through Freenom.
 
