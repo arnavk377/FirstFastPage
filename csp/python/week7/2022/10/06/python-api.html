@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      3 min read
     
 </span></p>
 
@@ -138,6 +138,90 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://random-math-problem.p.rapidapi.com/random-problem&quot;</span>
+
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;html&quot;</span><span class="p">}</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">&quot;X-RapidAPI-Key&quot;</span><span class="p">:</span> <span class="s2">&quot;8677538c65mshfd1d85d7adf047fp17a8a1jsn7a54a04df28c&quot;</span><span class="p">,</span>
+	<span class="s2">&quot;X-RapidAPI-Host&quot;</span><span class="p">:</span> <span class="s2">&quot;random-math-problem.p.rapidapi.com&quot;</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;GET&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
+
+<span class="n">title</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)</span>
+<span class="n">problem</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;problem&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Printing response.text&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Printing response.json()&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Printing a title&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">title</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Printing a problem&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">problem</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Printing response.text
+{&#34;title&#34;:&#34;&lt;h2&gt;Lissajous Curves&lt;\/h2&gt;&#34;,&#34;problem&#34;:&#34;&lt;div class=\&#34;problem_content\&#34; role=\&#34;problem\&#34;&gt;\r\n&lt;p&gt;For coprime positive integers $a$ and $b$, let $C_{a,b}$ be the curve defined by:\n\\[\n\\begin{align}\nx &amp;amp;= \\cos \\left(at\\right) \\\\\ny &amp;amp;= \\cos \\left(b\\left(t-\\frac{\\pi}{10}\\right)\\right)\n\\end{align}\n\\]\nwhere $t$ varies between 0 and $2\\pi$.&lt;\/p&gt;\n\n&lt;p&gt;For example, the images below show $C_{2,5}$ (left) and $C_{7,4}$ (right):&lt;\/p&gt;\n&lt;div style=\&#34;text-align:center;\&#34;&gt;\n&lt;img src=\&#34;project\/images\/p777_lissajous-pair-25-74.png\&#34; class=\&#34;dark_img\&#34; alt=\&#34;\&#34; height=\&#34;300\&#34;&gt;\n&lt;\/div&gt;\n&lt;p&gt;Define $d(a,b) = \\sum (x^2 + y^2)$, where the sum is over all points (x, y) at which $C_{a,b}$ crosses itself.&lt;\/p&gt;\n\n&lt;p&gt;For example, in the case of $C_{2,5}$ illustrated above, the curve crosses itself at two points: (0.31, 0) and (-0.81, 0), rounding coordinates to two decimal places, yielding $d(2, 5)=0.75$. Some other examples are $d(2,3)=4.5$, $d(7,4)=39.5$, &lt;span style=\&#34;white-space:nowrap;\&#34;&gt;$d(7,5)=52$,&lt;\/span&gt; and $d(10,7)=23.25$.&lt;\/p&gt;\n\n&lt;p&gt;Let $s(m) = \\sum d(a,b)$, where this sum is over all pairs of coprime integers $a,b$ with $2\\le a\\le m$ and $2\\le b\\le m$.&lt;br&gt;\nYou are given that $s(10) = 1602.5$ and $s(100) = 24256505$.&lt;\/p&gt;\n\n&lt;p&gt;Find $s(10^6)$. Give your answer in scientific notation rounded to 10 significant digits; for example $s(100)$ would be given as 2.425650500e7.&lt;\/p&gt;\n&lt;\/div&gt;&#34;}
+Printing response.json()
+{&#39;title&#39;: &#39;&lt;h2&gt;Lissajous Curves&lt;/h2&gt;&#39;, &#39;problem&#39;: &#39;&lt;div class=&#34;problem_content&#34; role=&#34;problem&#34;&gt;\r\n&lt;p&gt;For coprime positive integers $a$ and $b$, let $C_{a,b}$ be the curve defined by:\n\\[\n\\begin{align}\nx &amp;amp;= \\cos \\left(at\\right) \\\\\ny &amp;amp;= \\cos \\left(b\\left(t-\\frac{\\pi}{10}\\right)\\right)\n\\end{align}\n\\]\nwhere $t$ varies between 0 and $2\\pi$.&lt;/p&gt;\n\n&lt;p&gt;For example, the images below show $C_{2,5}$ (left) and $C_{7,4}$ (right):&lt;/p&gt;\n&lt;div style=&#34;text-align:center;&#34;&gt;\n&lt;img src=&#34;project/images/p777_lissajous-pair-25-74.png&#34; class=&#34;dark_img&#34; alt=&#34;&#34; height=&#34;300&#34;&gt;\n&lt;/div&gt;\n&lt;p&gt;Define $d(a,b) = \\sum (x^2 + y^2)$, where the sum is over all points (x, y) at which $C_{a,b}$ crosses itself.&lt;/p&gt;\n\n&lt;p&gt;For example, in the case of $C_{2,5}$ illustrated above, the curve crosses itself at two points: (0.31, 0) and (-0.81, 0), rounding coordinates to two decimal places, yielding $d(2, 5)=0.75$. Some other examples are $d(2,3)=4.5$, $d(7,4)=39.5$, &lt;span style=&#34;white-space:nowrap;&#34;&gt;$d(7,5)=52$,&lt;/span&gt; and $d(10,7)=23.25$.&lt;/p&gt;\n\n&lt;p&gt;Let $s(m) = \\sum d(a,b)$, where this sum is over all pairs of coprime integers $a,b$ with $2\\le a\\le m$ and $2\\le b\\le m$.&lt;br&gt;\nYou are given that $s(10) = 1602.5$ and $s(100) = 24256505$.&lt;/p&gt;\n\n&lt;p&gt;Find $s(10^6)$. Give your answer in scientific notation rounded to 10 significant digits; for example $s(100)$ would be given as 2.425650500e7.&lt;/p&gt;\n&lt;/div&gt;&#39;}
+Printing a title
+&lt;h2&gt;Lissajous Curves&lt;/h2&gt;
+Printing a problem
+&lt;div class=&#34;problem_content&#34; role=&#34;problem&#34;&gt;
+&lt;p&gt;For coprime positive integers $a$ and $b$, let $C_{a,b}$ be the curve defined by:
+\[
+\begin{align}
+x &amp;amp;= \cos \left(at\right) \\
+y &amp;amp;= \cos \left(b\left(t-\frac{\pi}{10}\right)\right)
+\end{align}
+\]
+where $t$ varies between 0 and $2\pi$.&lt;/p&gt;
+
+&lt;p&gt;For example, the images below show $C_{2,5}$ (left) and $C_{7,4}$ (right):&lt;/p&gt;
+&lt;div style=&#34;text-align:center;&#34;&gt;
+&lt;img src=&#34;project/images/p777_lissajous-pair-25-74.png&#34; class=&#34;dark_img&#34; alt=&#34;&#34; height=&#34;300&#34;&gt;
+&lt;/div&gt;
+&lt;p&gt;Define $d(a,b) = \sum (x^2 + y^2)$, where the sum is over all points (x, y) at which $C_{a,b}$ crosses itself.&lt;/p&gt;
+
+&lt;p&gt;For example, in the case of $C_{2,5}$ illustrated above, the curve crosses itself at two points: (0.31, 0) and (-0.81, 0), rounding coordinates to two decimal places, yielding $d(2, 5)=0.75$. Some other examples are $d(2,3)=4.5$, $d(7,4)=39.5$, &lt;span style=&#34;white-space:nowrap;&#34;&gt;$d(7,5)=52$,&lt;/span&gt; and $d(10,7)=23.25$.&lt;/p&gt;
+
+&lt;p&gt;Let $s(m) = \sum d(a,b)$, where this sum is over all pairs of coprime integers $a,b$ with $2\le a\le m$ and $2\le b\le m$.&lt;br&gt;
+You are given that $s(10) = 1602.5$ and $s(100) = 24256505$.&lt;/p&gt;
+
+&lt;p&gt;Find $s(10^6)$. Give your answer in scientific notation rounded to 10 significant digits; for example $s(100)$ would be given as 2.425650500e7.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
