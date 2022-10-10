@@ -7,8 +7,6 @@ image:
 title: Program Design and Development
 ---
 
-![]({{ site.baseurl }}/images/deploy.jpeg)
-
 # Program Basics
 - Our program will be a notes site which allows users to store their notes for classes. 
 - We plan to store the notes so a user can make specific folders for certain classes.
