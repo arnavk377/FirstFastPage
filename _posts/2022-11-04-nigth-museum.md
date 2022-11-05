@@ -33,3 +33,7 @@ Some were pencil drawings, some were colored pencil, and some were paintings.
 Ceramics had many cool products to show at Night at the Museum. While creating the art may have been frustrating, the finished projects are very nice showpieces. 
 
 ![]({{ site.baseurl }}/images/ceram2.jpg)
+
+# Project Ideas
+
+Night at the Museum is a great place for creativity. There were many fantastic works which could be used as inspiration. Some ideas for future projects could be an NFL stat tracker, a random image generator, or a website that classifies architecture of different cities or areas.
