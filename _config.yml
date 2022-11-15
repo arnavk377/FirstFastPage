@@ -38,10 +38,13 @@ baseurl: "/FirstFastPage" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
+  skin: dark
+    social_links:
+      github: MuffinMan1287
   social_links:
-    twitter: 
-    github: MuffinMan1287
-
+    - { platform: github, user_url: ”
+https://github.com/MuffinMan1287
+“}
 # Set this to true to get LaTeX math equation support
 use_math: 
 
