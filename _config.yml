@@ -39,11 +39,19 @@ baseurl: "/FirstFastPage" # the subpath of your site, e.g. "/blog".
 # Github and twitter are optional:
 minima:
   skin: dark
-    social_links:
-      github: MuffinMan1287
+  #  social_links:
+  #    twitter: NighthawkCoding
+  #    github: nighthawkcoders
+  #   youtube_channel: UClIKOsDS5dsfzFA3zveDT3Q
   social_links:
     - { platform: github, user_url: ”
-https://github.com/MuffinMan1287
+https://github.com/nighthawkcoders
+“}
+    - { platform: twitter, user_url: ”
+https://twitter.com/NighthawkCoding
+“}
+    - { platform: youtube, user_url: ”
+https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q
 “}
 # Set this to true to get LaTeX math equation support
 use_math: 
