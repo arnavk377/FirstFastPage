@@ -2,17 +2,25 @@
 title: Binary Math
 layout: default
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
-permalink: /frontend/binary
+permalink: /binary
 image: /images/binary.png
-tags: []
+tags: 
 ---
 
 <!-- Hack 1: add a character display to text when 8 bits, determine if printable or not printable -->
 <!-- Hack 2: change to 24 bits and add a color code and display color when 24 bits, think about display on this one -->
 <!-- Hack 3: do your own thing -->
 
-{% assign BITS = 8 %}
 
+{% assign BITS = 24 %}
+<style>
+    container {
+        width: 320px;
+        padding: 10px;
+        border: 5px solid gray;
+        margin: 0;
+    }
+</style>
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
         <span class="fs-4">Binary Math with Conversions</span>
@@ -26,6 +34,9 @@ tags: []
                 <th>Octal</th>
                 <th>Hexadecimal</th>
                 <th>Decimal</th>
+                <th>ASCII</th>
+                <th>RGB</th>
+                <th>Color</th>
                 <th>Minus</th>
             </tr>
             <tr>
@@ -34,6 +45,9 @@ tags: []
                 <td id="octal">0</td>
                 <td id="hexadecimal">0</td>
                 <td id="decimal">0</td>
+                <td id="word">None</td>
+                <td id="rgb"></td>
+                <td id="box">Here is the color.</td>
                 <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
             </tr>
             </table>
@@ -65,7 +79,7 @@ tags: []
     const BITS = {{ BITS }};
     const MAX = 2 ** BITS - 1;
     const MSG_ON = "Turn on";
-    const IMAGE_ON = "{{site.baseurl}}/images/bulb_on.gif";
+    const IMAGE_ON = "{{site.baseurl}}/images/bulb_on.png";
     const MSG_OFF = "Turn off";
     const IMAGE_OFF = "{{site.baseurl}}/images/bulb_off.png"
 
@@ -86,7 +100,33 @@ tags: []
         document.getElementById('hexadecimal').innerHTML = parseInt(binary, 2).toString(16);
         // Decimal conversion
         document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString();
+
+        document.getElementById('word').innerHTML = String.fromCharCode(parseInt(binary, 2));
+
+        
     }
+    function rgb(binary) {
+        document.getElementById('binary').innerHTML = binary;
+        let hexadecimal = parseInt(binary, 2).toString(16);
+        // Octal conversion
+        console.log(hexadecimal);
+        let hex = hexadecimal.toString();
+
+        var x = hex[1] + hex [2];
+        var y = hex[3] + hex [4];
+        var z = hex[5] + hex [6];
+
+        var r = parseInt(x,16);
+        var g = parseInt(y,16);
+        var b = parseInt(z,16);
+        
+        const box = document.querySelector('.box');
+
+        document.getElementById("box").style.color = "rgb("+r+", "+g+", "+b+")";
+        console.log("rgb("+r+", "+g+", "+b+")");
+        document.getElementById('rgb').innerHTML = "rgb("+r+", "+g+", "+b+")";
+    }
+
     //
     function decimal_2_base(decimal, base) {
         let conversion = "";
@@ -124,6 +164,7 @@ tags: []
         // Binary numbers
         const binary = getBits();
         setConversions(binary);
+        rgb(binary);
     }
     // add is positive integer, subtract is negative integer
     function add(n) {
