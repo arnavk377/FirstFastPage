@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -99,10 +99,41 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#notes">Notes</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#important-functions">Important Functions</a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h1"><a href="#312-part-1">3.12 Part 1</a></li>
 <li class="toc-entry toc-h1"><a href="#312-part-2">3.12 Part 2</a></li>
 <li class="toc-entry toc-h1"><a href="#313">3.13</a></li>
-</ul><h1 id="312-part-1">
+<li class="toc-entry toc-h1"><a href="#reflection">Reflection</a></li>
+</ul><h1 id="notes">
+<a class="anchor" href="#notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes</h1>
+<ul>
+  <li>
+<mark>Procedure:</mark> named group of programming instructions that may have parameters and return values</li>
+  <li>
+<mark>Parameters:</mark> input values of procedures</li>
+  <li>
+<mark>Argurments:</mark> specifcy the values of the parameters when a procedure is called</li>
+  <li>Procedures always follow an order, from top to bottom, unless there are other conditions</li>
+  <li>2 types of procedure: one that returns a statement, and one which just executes code</li>
+  <li>How to code Procedures: Make sure the name of a procedure has a clear purpose and some of it is capitalized</li>
+  <li>
+<mark>Modularity:</mark> the practice of breaking a complex program into smaller, independent parts or modules that can be used and reused in different parts of the program</li>
+</ul>
+
+<h2 id="important-functions">
+<a class="anchor" href="#important-functions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Important Functions</h2>
+<ul>
+  <li>MOVE_FORWARD(): makes the robot move forward</li>
+  <li>ROTATE_LEFT(): makes the robot rotate left</li>
+  <li>ROTATE_RIGHT(): makes the robot rotate right</li>
+  <li>CAN_MOVE(direction): checks if the robot can move in a particular direction</li>
+</ul>
+
+<h1 id="312-part-1">
 <a class="anchor" href="#312-part-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.12 Part 1</h1>
 <ul>
   <li>
@@ -187,35 +218,30 @@ window.onload = wrap_img;
       <li>PROCEDURE moveAplus {</li>
     </ul>
     <ul>
-      <li>IF canMoveF {
-        <ul>
-          <li>MOVE_FORWARD()</li>
-        </ul>
-      </li>
-      <li>}</li>
-      <li>ELSE {
-        <ul>
-          <li>IF canMoveR {
-            <ul>
-              <li>ROTATE_RIGHT()</li>
-              <li>MOVE_FORWARD()</li>
-            </ul>
-          </li>
-          <li>}</li>
-          <li>ELSE {
-            <ul>
-              <li>ROTATE_LEFT()</li>
-              <li>MOVE_FORWARD()</li>
-            </ul>
-          </li>
-          <li>}</li>
-        </ul>
-      </li>
-      <li>}
+      <li>MOVE_FORWARD()</li>
+      <li>ROTATE_LEFT()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>ROTATE_RIGHT()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>ROTATE_LEFT()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>ROTATE_LEFT()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>ROTATE_RIGHT()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>ROTATE_LEFT()</li>
+      <li>MOVE_FORWARD()
     - }</li>
     </ul>
   </li>
-  <li>Answer: <mark>B. PROCEDURE MyList</mark> Procedure needs to be completely capitalized, and some parts of the declared procedure should be capitalized.</li>
+  <li>
+    <p>Answer: <mark>B. PROCEDURE MyList</mark> Procedure needs to be completely capitalized, and some parts of the declared procedure should be capitalized.</p>
+  </li>
   <li>Move the Beachball to the Green Square
     <ul>
       <li>PROCEDURE moveBall {</li>
@@ -241,6 +267,10 @@ window.onload = wrap_img;
     </ul>
   </li>
 </ol>
+
+<h1 id="reflection">
+<a class="anchor" href="#reflection" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reflection</h1>
+<p>This lesson provided great insight into how to create procedures and make robots. Procedures are important in many coding languages, and having efficient names for them will be key, especially when there is a long program. Procedures also have arguments which allow different arguments to be called. Moving robots can be challenging, as it can be hard to visualize and describe the specific rotations it would take. The nature of direction makes it much easier for us to do, but very hard for us to describe and instruct upon. I had some challenges with the robot moving problems, but with lots of practice, I can achieve mastery.</p>
 
   </div><a class="u-url" href="/FirstFastPage/markdown/week11/2022/12/10/s12.html" hidden></a>
 </article>
