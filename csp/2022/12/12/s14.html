@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      6 min read
     
 </span></p>
 
@@ -126,7 +126,11 @@ window.onload = wrap_img;
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h1"><a href="#Reflection">Reflection </a>
 <ul>
-<li class="toc-entry toc-h2"><a href="#Notes">Notes </a></li>
+<li class="toc-entry toc-h2"><a href="#Notes">Notes </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Vocab">Vocab </a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-entry toc-h1"><a href="#Multiple-Choice-Problems">Multiple Choice Problems </a></li>
@@ -161,9 +165,35 @@ window.onload = wrap_img;
 <h1 id="Reflection">
 <a class="anchor" href="#Reflection" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reflection<a class="anchor-link" href="#Reflection"> </a>
 </h1>
+<p>This was an interesting lesson. It gave me new insights on useful skills for coding. Using libraries will allow coding to be much easier, and use work that has already been developed. Documentation makes it easy for someone to read my code, and many programs have a documentation which outlines usage for the users. The random library is used very frequently in Python programming. Randomization can be very useful in programs. A lot of programs which we see use randomization, such as games or websites.</p>
 <h2 id="Notes">
 <a class="anchor" href="#Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes<a class="anchor-link" href="#Notes"> </a>
 </h2>
+<ul>
+<li>Software libraries contain procedures used in creating novel programs</li>
+<li>Libraries and prewritten code can make writing algorithms much easier</li>
+<li>Libraries simplify complex programs</li>
+<li>APIs(application program interfaces) specify how procedures in libraries should behave and be utilized</li>
+<li>Reading documentation makes it much easier to understand how to use libraries/APIs</li>
+<li>Useful random functions include:<ul>
+<li>random.randint(a, b): generates a random number. The values of a and b are required, as they are the start and stop values, placing an inclusive limit on the number to be generated. C is the step, which is optional, and is the interval at which the random numbers are generated at</li>
+<li>random.randrange(a, b, c): generates a random number. The values of a and b are required, as they are the start and stop values, placing an inclusive limit on the number to be generated. C is the step, which describes what kind of multiple can be generated. The potential value starts at a, or is a a + a multiple of c, and is less than b.</li>
+<li>random.shuffle: shuffles a list randomly to scramble contents</li>
+</ul>
+</li>
+</ul>
+<h3 id="Vocab">
+<a class="anchor" href="#Vocab" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vocab<a class="anchor-link" href="#Vocab"> </a>
+</h3>
+<ul>
+<li>
+<mark>Documentation:</mark> Text that explains the what, how, or why of your code.</li>
+<li>
+<mark>Libraries:</mark> A collection of prewritten code or procedures that coders can use to maximize their efficiency</li>
+<li>
+<mark>Application Programming Interface:</mark> A type of software through several computers are able to communicate information amongst eachother</li>
+</ul>
+
 </div>
 </div>
 </div>
@@ -219,19 +249,37 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> 
 
+<span class="c1"># takes user input, puts it into a list of names</span>
 <span class="n">names_string</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Give me everybody's names, seperated by a comma."</span><span class="p">)</span>
 <span class="n">names</span> <span class="o">=</span> <span class="n">names_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">","</span><span class="p">)</span>
 
 <span class="n">num_items</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
 
+<span class="c1"># uses random to choose a random number</span>
 <span class="n">random_choice</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">num_items</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
 
+<span class="c1"># associates random number with a name</span>
 <span class="n">person_who_will_pay</span> <span class="o">=</span> <span class="n">names</span><span class="p">[</span><span class="n">random_choice</span><span class="p">]</span>
 
+<span class="c1"># prints name</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">person_who_will_pay</span><span class="si">}</span><span class="s2"> is going to buy the meal today!"</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre> Dwayne Johnson is going to buy the meal today!
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
