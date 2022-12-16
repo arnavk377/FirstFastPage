@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      4 min read
     
 </span></p>
 
@@ -124,7 +124,11 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h1"><a href="#Notes">Notes </a></li>
+<li class="toc-entry toc-h1"><a href="#Notes">Notes </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Vocabulary">Vocabulary </a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h1"><a href="#Hack-1">Hack 1 </a></li>
 <li class="toc-entry toc-h1"><a href="#Hack-2">Hack 2 </a></li>
 <li class="toc-entry toc-h1"><a href="#Hack-3">Hack 3 </a></li>
@@ -146,6 +150,27 @@ window.onload = wrap_img;
 <a class="anchor" href="#Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes<a class="anchor-link" href="#Notes"> </a>
 </h1>
 <ul>
+<li>An algorithm's efficiency is determine through formal or mathematical reasoning</li>
+<li>An algorithm’s efficiency can be informally measured by determining the number of times a statement or group of statements executes</li>
+<li>Different codes have different efficiencies</li>
+<li>It is important to pay attention to efficiencies especially when dealing with large code segments and having a limited hardware</li>
+<li>Improved efficiencies make programs faster and better for users</li>
+<li>Algorithms with a polynomial efficiency or slower (constant, linear, square, cube, etc.) are said to run in a reasonable amount of time </li>
+<li>Algorithms with exponential or factorial efficiencies are examples of algorithms that run in an unreasonable amount of time</li>
+<li>Some problems can not be solved in a reasonable amount of time, so when this is the case, an approximate solution is found</li>
+</ul>
+<h2 id="Vocabulary">
+<a class="anchor" href="#Vocabulary" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vocabulary<a class="anchor-link" href="#Vocabulary"> </a>
+</h2>
+<ul>
+<li>
+<mark>Problem:</mark> a description of a task that may or may not be able to be solved through the use of an algorithm</li>
+<li>
+<mark>Instance of a problem:</mark> includes a specific input</li>
+<li>
+<mark>Decision problem:</mark> Problem with a binary answer (yes or no)</li>
+<li>
+<mark>Optimization problem:</mark> Problem with the objective of finding the BEST solution amongst many possibilities to solve a problem</li>
 <li>
 <mark>Decidable Problems:</mark> problems for which algorithms can be written to solve/produce a correct output for all possible inputs</li>
 <li>
@@ -153,6 +178,30 @@ window.onload = wrap_img;
 <li>Some undecidable problems can have algorithms to solve some parts, but not all parts of the problem</li>
 </ul>
 </li>
+<li>
+<mark>1 Step Problem:</mark> When an integer is multiplied by a value(Linear)</li>
+<li>
+<mark>2 Step Problem:</mark> When an integer is raised to a power of n(Exponential)</li>
+<li>
+<mark>3 Step Problem:</mark> When an integer is multiplied by a value, and then raised to a power of 2(Square)</li>
+<li>
+<mark>4 Step Problem:</mark> A factorial problem</li>
+<li>
+<mark>Constant Time:</mark> Will always take the same number of steps, no matter how large input it</li>
+<li>
+<mark>Linear Time:</mark> The number of steps increases in direct proportion to the input size</li>
+<li>
+<mark>Quadratic Time:</mark> The number of steps increase in proportion to the input size squared</li>
+<li>
+<mark>Exponential Time:</mark> The number of steps increase in proportion to the input size squared</li>
+<li>
+<mark>Polynomial time:</mark> any run time that does not increase faster than n^k which includes constant time, quadratic time, and other higher degree polynomials</li>
+<li>
+<mark>Superpolynomial time:</mark> any run time that does increase faster than n^k which includes Exponential time and factorial time</li>
+<li>
+<mark>Reasonable Time:</mark> Algorithms with a polynomial efficiency or lower (constant, linear, square, cube, etc.)</li>
+<li>
+<mark>Unreasonable Time:</mark> Algorithms with exponential or factorial efficiencies</li>
 </ul>
 
 </div>
@@ -175,6 +224,19 @@ window.onload = wrap_img;
 <h1 id="Hack-3">
 <a class="anchor" href="#Hack-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 3<a class="anchor-link" href="#Hack-3"> </a>
 </h1>
+<ul>
+<li>
+<p>Explanation for Code: Defines a function to find a peak, and goes through each item, and checks if it is greater than the stored value.</p>
+</li>
+<li>
+<p>Why this is more efficient: This uses much less code and will work for all lists. This code is easy to write an understand.</p>
+<ul>
+<li>
+<mark>NOTE:</mark> A binary search would be much more time efficient, as it would use exponential time. However, I was having trouble creating this code due to the overall challenge and expertise needed for creating such a complex algorithm.</li>
+</ul>
+</li>
+</ul>
+
 </div>
 </div>
 </div>
@@ -186,98 +248,17 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-javascript"><pre><span></span><span class="kd">function</span> <span class="nx">peak_finder</span><span class="p">(</span><span class="nx">array</span><span class="p">)</span> <span class="p">{</span>
-  <span class="kd">let</span> <span class="nx">low</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
-  <span class="kd">let</span> <span class="nx">high</span> <span class="o">=</span> <span class="nx">array</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mf">1</span><span class="p">;</span>
-  
-  <span class="c1">// Keep searching for a peak until the low and high indices meet</span>
-  <span class="k">while</span> <span class="p">(</span><span class="nx">low</span> <span class="o">&lt;=</span> <span class="nx">high</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kd">let</span> <span class="nx">mid</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">low</span> <span class="o">+</span> <span class="nx">high</span><span class="p">)</span> <span class="o">/</span> <span class="mf">2</span><span class="p">);</span>
-    
-    <span class="c1">// Check if the middle element is a peak</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">array</span><span class="p">[</span><span class="nx">mid</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">array</span><span class="p">[</span><span class="nx">mid</span> <span class="o">-</span> <span class="mf">1</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="nx">array</span><span class="p">[</span><span class="nx">mid</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">array</span><span class="p">[</span><span class="nx">mid</span> <span class="o">+</span> <span class="mf">1</span><span class="p">])</span> <span class="p">{</span>
-      <span class="k">return</span> <span class="sb">`The </span><span class="si">${</span><span class="nx">mid</span><span class="si">}</span><span class="sb"> indexed number, </span><span class="si">${</span><span class="nx">array</span><span class="p">[</span><span class="nx">mid</span><span class="p">]</span><span class="si">}</span><span class="sb"> is a peak`</span><span class="p">;</span>
-    <span class="p">}</span>
-    
-    <span class="c1">// If the middle element is not a peak,</span>
-    <span class="c1">// check if the left side of the array has a peak</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">array</span><span class="p">[</span><span class="nx">mid</span> <span class="o">-</span> <span class="mf">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">array</span><span class="p">[</span><span class="nx">mid</span><span class="p">])</span> <span class="p">{</span>
-      <span class="nx">high</span> <span class="o">=</span> <span class="nx">mid</span> <span class="o">-</span> <span class="mf">1</span><span class="p">;</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-      <span class="c1">// If the left side doesn't have a peak,</span>
-      <span class="c1">// the right side must have a peak</span>
-      <span class="nx">low</span> <span class="o">=</span> <span class="nx">mid</span> <span class="o">+</span> <span class="mf">1</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">peak</span> <span class="o">=</span> <span class="nx">array</span><span class="p">[</span><span class="mf">0</span><span class="p">];</span>
+  <span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">array</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">array</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">peak</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">peak</span> <span class="o">=</span> <span class="nx">array</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
     <span class="p">}</span>
   <span class="p">}</span>
-  
-  <span class="k">return</span> <span class="s2">"Could not find a peak in the array"</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nx">peak</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="kd">let</span> <span class="nx">array</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">,</span> <span class="mf">4</span><span class="p">,</span> <span class="mf">5</span><span class="p">,</span> <span class="mf">6</span><span class="p">,</span> <span class="mf">7</span><span class="p">,</span> <span class="mf">8</span><span class="p">];</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">peak_finder</span><span class="p">(</span><span class="nx">array</span><span class="p">));</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-evalmachine.&lt;anonymous&gt;:1
-function peak_finder(array) {
-^
-
-SyntaxError: Identifier 'array' has already been declared
-    at evalmachine.&lt;anonymous&gt;:1:1
-    at Script.runInThisContext (vm.js:96:20)
-    at Object.runInThisContext (vm.js:303:38)
-    at run ([eval]:1020:15)
-    at onRunRequest ([eval]:864:18)
-    at onMessage ([eval]:828:13)
-    at process.emit (events.js:182:13)
-    at emit (internal/child_process.js:812:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="kd">function</span> <span class="nx">peak_finder</span><span class="p">(</span><span class="nx">array</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kd">let</span> <span class="nx">left</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
-    <span class="kd">let</span> <span class="nx">right</span> <span class="o">=</span> <span class="nx">array</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mf">1</span><span class="p">;</span>
-  
-    <span class="k">while</span> <span class="p">(</span><span class="nx">left</span> <span class="o">&lt;=</span> <span class="nx">right</span><span class="p">)</span> <span class="p">{</span>
-      <span class="kr">const</span> <span class="nx">mid</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">left</span> <span class="o">+</span> <span class="nx">right</span><span class="p">)</span> <span class="o">/</span> <span class="mf">2</span><span class="p">);</span>
-  
-      <span class="k">if</span> <span class="p">(</span><span class="nx">array</span><span class="p">[</span><span class="nx">mid</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">array</span><span class="p">[</span><span class="nx">mid</span> <span class="o">+</span> <span class="mf">1</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="nx">array</span><span class="p">[</span><span class="nx">mid</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">array</span><span class="p">[</span><span class="nx">mid</span> <span class="o">-</span> <span class="mf">1</span><span class="p">])</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="sb">`The </span><span class="si">${</span><span class="nx">mid</span><span class="si">}</span><span class="sb"> indexed number, </span><span class="si">${</span><span class="nx">array</span><span class="p">[</span><span class="nx">mid</span><span class="p">]</span><span class="si">}</span><span class="sb"> is a peak`</span><span class="p">;</span>
-      <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">array</span><span class="p">[</span><span class="nx">mid</span><span class="p">]</span> <span class="o">&lt;</span> <span class="nx">array</span><span class="p">[</span><span class="nx">mid</span> <span class="o">+</span> <span class="mf">1</span><span class="p">])</span> <span class="p">{</span>
-        <span class="nx">left</span> <span class="o">=</span> <span class="nx">mid</span> <span class="o">+</span> <span class="mf">1</span><span class="p">;</span>
-      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="nx">right</span> <span class="o">=</span> <span class="nx">mid</span> <span class="o">-</span> <span class="mf">1</span><span class="p">;</span>
-      <span class="p">}</span>
-    <span class="p">}</span>
-  
-    <span class="k">return</span> <span class="s2">"No peak was found"</span><span class="p">;</span>
-  <span class="p">}</span>
-
-<span class="kd">let</span> <span class="nx">number</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0</span><span class="p">,</span> <span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">,</span> <span class="mf">4</span><span class="p">,</span> <span class="mf">5</span><span class="p">];</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">((</span><span class="nx">peak_finder</span><span class="p">(</span><span class="nx">number</span><span class="p">)))</span>
+<span class="kd">var</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">,</span> <span class="mf">4</span><span class="p">,</span> <span class="mf">5</span><span class="p">,</span> <span class="mf">6</span><span class="p">,</span> <span class="mf">7</span><span class="p">,</span> <span class="mf">8</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">peak_finder</span><span class="p">(</span><span class="nx">numbers</span><span class="p">));</span>
 </pre></div>
 
     </div>
@@ -290,7 +271,7 @@ SyntaxError: Identifier 'array' has already been declared
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>No peak was found
+<pre>8
 </pre>
 </div>
 </div>
@@ -307,6 +288,15 @@ SyntaxError: Identifier 'array' has already been declared
 <h1 id="Hack-4">
 <a class="anchor" href="#Hack-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 4<a class="anchor-link" href="#Hack-4"> </a>
 </h1>
+<ul>
+<li>
+<p>Explanation for Code: This code defines a list, which has the numbers. Then, it redefines the list of numbers, using the function in Python called <code>sorted</code>. This automatically sorts the data in order from lowest to highest.</p>
+</li>
+<li>
+<p>Why this is more efficient: This is a much smaller piece of code, making it much easier to write and understand. It calls the data less and does not create any new variables other than data. It uses a built in function to sort the data, instead of recreating a function to do so.</p>
+</li>
+</ul>
+
 </div>
 </div>
 </div>
@@ -349,6 +339,15 @@ SyntaxError: Identifier 'array' has already been declared
 <h1 id="Hack-5">
 <a class="anchor" href="#Hack-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 5<a class="anchor-link" href="#Hack-5"> </a>
 </h1>
+<ul>
+<li>
+<p>Explanation for Code: Imports the permutation method from the library <code>itertools</code>. Using this, we can use a built in command to create permutations. Using a for loop, we can iterate through all possible permutations, and print them.</p>
+</li>
+<li>
+<p>Why this is more efficient: This is not only a much smaller piece of code, but it does not require recalling a variable multiple times, like in the former program. This is also more efficient for the developer, as it allows for the individual to code much less and in a simpler fashion.</p>
+</li>
+</ul>
+
 </div>
 </div>
 </div>
