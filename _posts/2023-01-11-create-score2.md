@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: AP Test Prep
 categories: [markdown, ap]
-title: Performance Task Scoring 1
+title: Performance Task Scoring 2
 ---
 
 # Example 1
@@ -13,7 +13,7 @@ title: Performance Task Scoring 1
 | Program Purpose and Function | 0 | 0 | While the video shows clear user input and functionality, there is no clear problem which is solved, which prevents the individual from earning the point for this. |
 | Data Abstraction | 0 | 0 | The individual clearly states that there is a list and shows the necessary amount of code segments. However, the user states that pictures are stored in a list, which is incorrect. |
 | Managing Complexity | 0 | 0 | The program does show a code segment of the list, but it does not explain how the program requires list. Additionally, the program would be able to work even if there weren't lists. |
-| Procedural Abstraction | 1 | 0 | The student did create a program, evaluateGuess to check if the user's guesses were correct or not. There is an explanation of the evaluateGuess function, but there is no explanation of a parameter. Additionally, the student does not have anything talking about how the created function helps contribute to the general program purpose. |
+| Procedural Abstraction | 0 | 0 | The student did create a program, evaluateGuess to check if the user's guesses were correct or not. There is an explanation of the evaluateGuess function, but there is no explanation of a parameter. Additionally, the student does not have anything talking about how the created function helps contribute to the general program purpose. |
 | Algorithm Implementation | 0 | 0 | There is not a clear enough description to help someone recreate the program easily. There is a lack of a description. |
 | Testing | 1 | 1 | Effectively calls and has different inputs for the project function. There are accurate descriptions of what will happen when the inputs are put into the program. |
 
@@ -57,6 +57,6 @@ title: Performance Task Scoring 1
 - Testing: I thought that testing the multiple outcomes would meet the standards. Collegeboard wanted specific requirements, that included testing specific arguments, not just getting different outcomes. So, they deemed this program would not receive the point.
 
 # Things to Remember
-- Specificity: It is important to make sure that the program meets the specific requirements of Collegeboard. Based on these examples, I have learned that Collegeboard is very concise on what they want to see. Testing or writing about things which are too broad will not earn me the point.
-- Correctness: Collegeboard looks to make sure that all parts of the written response accurately describe the methods of code. They will take points away if the response has something about the incorrect functionality of code, so it will be important to proofread the explanation.
-- Planning: I think it will be very important to plan out how a program will be able to meet the requirements of the Collegeboard Create Performance Task in order to create an efficient and high scoring project. It will be important to take into consideration the many things which Collegeboard looks for.
+- <mark>Specificity:</mark> It is important to make sure that the program meets the specific requirements of Collegeboard. Based on these examples, I have learned that Collegeboard is very concise on what they want to see. Testing or writing about things which are too broad will not earn me the point.
+- <mark>Correctness:</mark> Collegeboard looks to make sure that all parts of the written response accurately describe the methods of code. They will take points away if the response has something about the incorrect functionality of code, so it will be important to proofread the explanation.
+- <mark>Planning:</mark> I think it will be very important to plan out how a program will be able to meet the requirements of the Collegeboard Create Performance Task in order to create an efficient and high scoring project. It will be important to take into consideration the many things which Collegeboard looks for.
