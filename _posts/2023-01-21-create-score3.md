@@ -46,8 +46,7 @@ title: Performance Task Scoring 3
 
 | Reporting Category | Student Score | Collegeboard Score | Comments |
 | --- | --- | --- | --- |
-| Program Purpose and Function | 1 | 1 | <mark>Has:</mark> The written response features what the program does accurately,
-Video showing multiple inputs into the program, Shows output of the program, The program shows how the input affects the output of the function |
+| Program Purpose and Function | 1 | 1 | <mark>Has:</mark> The written response features what the program does accurately, Video showing multiple inputs into the program, Shows output of the program, The program shows how the input affects the output of the function |
 | Data Abstraction | 1 | 1 | <mark>Has:</mark> 2 code segments, Shows how the list is being used and how data is accessed from it, Names the list, Response is accurate with what is stored in the list |
 | Managing Complexity | 1 | 1 | <mark>Has:</mark> A code segment with the list, Talks about what the list does, The explanation shows how the code could be written without a list |
 | Procedural Abstraction | 0 | 0 | <mark>Has:</mark> There are 2 code segments in the written response, Student has a self created procedure, Talks about how the program will work thanks to the procedure |
