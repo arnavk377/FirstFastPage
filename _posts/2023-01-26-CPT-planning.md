@@ -24,9 +24,15 @@ This which I plan to show in my video:
 - User correctly selecting player
 - User incorrectly selecting player
 - Final screen after wrong answer
+- Game ending after player scores no points
+- Game ending after player scores some points
+
+I think the video will be able to be easily done under the given threshold of 60 seconds, since there are a few simple things to be shown.
 
 # Code Plan
 Potential code segments to submit to Collegeboard:
 - Usage of list to store list of players
 - Code which will determine whether user will get another question or if the game will end
 - Accessing the list storing the player data
+
+With the code segments, it will be important to have segments which can serve for multiple requirements. Based on the examples, it looks like there are only a limited amount of code segments which can be uploaded, so it is important to use each one to its maximum potential.
