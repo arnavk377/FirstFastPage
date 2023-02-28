@@ -20,9 +20,9 @@ The video will show the user playing the game. In one case, the user will guess 
 
 ## Part b
 
-![Frontend Ideation]({{ site.baseurl }}/images/code1.png)
+![]({{ site.baseurl }}/images/code1.png)
 
-![Frontend Ideation]({{ site.baseurl }}/images/code2.png)
+![]({{ site.baseurl }}/images/code2.png)
 
 ### i
 The data from the API containing the players and their statistics is stored in a list.
@@ -41,9 +41,9 @@ Without a list, there would have to be many individual variable for each player 
 
 ## Part c
 
-![Frontend Ideation]({{ site.baseurl }}/images/code3.png)
+![]({{ site.baseurl }}/images/code3.png)
 
-![Frontend Ideation]({{ site.baseurl }}/images/code4.png)
+![]({{ site.baseurl }}/images/code4.png)
 
 ### i
 The given procedure randomly selects the players who will be for the user to choose from.
