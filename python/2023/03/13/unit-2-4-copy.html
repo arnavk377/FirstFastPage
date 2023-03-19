@@ -4,12 +4,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Unit 2.4a Using Programs with Data, SQLAlchemy | My First Fastpage</title>
+<title>Unit 2.4a Hacks | My First Fastpage</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Unit 2.4a Using Programs with Data, SQLAlchemy" />
+<meta property="og:title" content="Unit 2.4a Hacks" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Using Programs with Data is focused on SQL and database actions. Part A focuses on SQLAlchemy and an OOP programming style," />
-<meta property="og:description" content="Using Programs with Data is focused on SQL and database actions. Part A focuses on SQLAlchemy and an OOP programming style," />
+<meta name="description" content="Using OOP programming style with CPT database" />
+<meta property="og:description" content="Using OOP programming style with CPT database" />
 <link rel="canonical" href="https://muffinman1287.github.io/FirstFastPage//FirstFastPage/python/2023/03/13/unit-2-4-copy.html" />
 <meta property="og:url" content="https://muffinman1287.github.io/FirstFastPage//FirstFastPage/python/2023/03/13/unit-2-4-copy.html" />
 <meta property="og:site_name" content="My First Fastpage" />
@@ -18,9 +18,9 @@
 <meta property="article:published_time" content="2023-03-13T00:00:00-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://muffinman1287.github.io/FirstFastPage//FirstFastPage/images/python.png" />
-<meta property="twitter:title" content="Unit 2.4a Using Programs with Data, SQLAlchemy" />
+<meta property="twitter:title" content="Unit 2.4a Hacks" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-13T00:00:00-05:00","datePublished":"2023-03-13T00:00:00-05:00","description":"Using Programs with Data is focused on SQL and database actions. Part A focuses on SQLAlchemy and an OOP programming style,","headline":"Unit 2.4a Using Programs with Data, SQLAlchemy","image":"https://muffinman1287.github.io/FirstFastPage//FirstFastPage/images/python.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://muffinman1287.github.io/FirstFastPage//FirstFastPage/python/2023/03/13/unit-2-4-copy.html"},"url":"https://muffinman1287.github.io/FirstFastPage//FirstFastPage/python/2023/03/13/unit-2-4-copy.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-13T00:00:00-05:00","datePublished":"2023-03-13T00:00:00-05:00","description":"Using OOP programming style with CPT database","headline":"Unit 2.4a Hacks","image":"https://muffinman1287.github.io/FirstFastPage//FirstFastPage/images/python.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://muffinman1287.github.io/FirstFastPage//FirstFastPage/python/2023/03/13/unit-2-4-copy.html"},"url":"https://muffinman1287.github.io/FirstFastPage//FirstFastPage/python/2023/03/13/unit-2-4-copy.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/FirstFastPage/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://muffinman1287.github.io/FirstFastPage//FirstFastPage/feed.xml" title="My First Fastpage" /><link rel="shortcut icon" type="image/x-icon" href="/FirstFastPage/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -75,13 +75,13 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Unit 2.4a Using Programs with Data, SQLAlchemy</h1><p class="page-description">Using Programs with Data is focused on SQL and database actions.  Part A focuses on SQLAlchemy and an OOP programming style,</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-03-13T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Unit 2.4a Hacks</h1><p class="page-description">Using OOP programming style with CPT database</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-03-13T00:00:00-05:00" itemprop="datePublished">
         Mar 13, 2023
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      11 min read
+      12 min read
     
 </span></p>
 
@@ -295,11 +295,11 @@ window.onload = wrap_img;
 <span class="c1"># -- c.) SQLAlchemy ORM is layer on top of SQLAlchemy Core, then SQLAlchemy engine, SQL</span>
 <span class="c1"># defining the template the class of Users, class definition template, helps us create objects which are of the type User, template for future object</span>
 <span class="k">class</span> <span class="nc">Player</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
-    <span class="n">__tablename__</span> <span class="o">=</span> <span class="s1">'statsforqbs'</span>  <span class="c1"># table name is plural, class name is singular</span>
+    <span class="n">__tablename__</span> <span class="o">=</span> <span class="s1">'playerstats'</span>  <span class="c1"># table name is plural, class name is singular</span>
 
     <span class="c1"># Define the User schema with "vars" from object</span>
     <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="n">_name</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">_name</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">_atts</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">_comps</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">_yards</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -415,6 +415,7 @@ window.onload = wrap_img;
             <span class="bp">self</span><span class="o">.</span><span class="n">tds</span> <span class="o">=</span> <span class="n">tds</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">pimage</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">pimage</span> <span class="o">=</span> <span class="n">pimage</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
         <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
         <span class="k">return</span> <span class="bp">self</span>
 
@@ -428,21 +429,6 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/opt/anaconda3/lib/python3.9/site-packages/flask_sqlalchemy/model.py:120: SAWarning: This declarative base already contains a class with the same class name and module name as __main__.Player, and will be replaced in the string-lookup table.
-  super().__init__(name, bases, d, **kwargs)
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -608,7 +594,7 @@ Added data for Jalen Hurts
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">create</span><span class="p">():</span>
     <span class="c1"># optimize user time to see if uid exists</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter you a quarterback:"</span><span class="p">)</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a QB name:"</span><span class="p">)</span>
     <span class="n">pyer</span> <span class="o">=</span> <span class="n">find_by_name</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Found</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">pyer</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
@@ -617,7 +603,6 @@ Added data for Jalen Hurts
         <span class="k">pass</span> <span class="c1"># keep going</span>
     
     <span class="c1"># request value that ensure creating valid object</span>
-    <span class="n">pname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a QB name:"</span><span class="p">)</span>
     <span class="n">atts</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter their attempts:"</span><span class="p">)</span>
     <span class="n">comps</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter their completions:"</span><span class="p">)</span>
     <span class="n">yards</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter their yards:"</span><span class="p">)</span>
@@ -625,15 +610,13 @@ Added data for Jalen Hurts
     <span class="n">pimage</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a link to their image:"</span><span class="p">)</span>
 
     <span class="c1"># Initialize User object before date</span>
-    <span class="n">player</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">pname</span><span class="p">,</span> 
+    <span class="n">player</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> 
                 <span class="n">atts</span><span class="o">=</span><span class="n">atts</span><span class="p">,</span> 
                 <span class="n">comps</span><span class="o">=</span><span class="n">comps</span><span class="p">,</span>
                 <span class="n">yards</span><span class="o">=</span><span class="n">yards</span><span class="p">,</span>
                 <span class="n">tds</span><span class="o">=</span><span class="n">tds</span><span class="p">,</span>
                 <span class="n">pimage</span><span class="o">=</span><span class="n">pimage</span>
                 <span class="p">)</span>
-    
-    <span class="c1"># create user.dob, fail with today as dob</span>
            
     <span class="c1"># write object to database</span>
     <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
@@ -656,8 +639,8 @@ Added data for Jalen Hurts
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Found
- {'id': 6, 'name': 'Jared Goff', 'atts': '587', 'comps': '382', 'yards': '4438', 'tds': '29', 'pimage': 'images/jg.png'}
+<pre>Created
+ {'id': 11, 'name': '', 'atts': '', 'comps': '', 'yards': '', 'tds': '', 'pimage': ''}
 </pre>
 </div>
 </div>
@@ -668,25 +651,6 @@ Added data for Jalen Hurts
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Reading-users-table-in-sqlite.db">
-<a class="anchor" href="#Reading-users-table-in-sqlite.db" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reading users table in sqlite.db<a class="anchor-link" href="#Reading-users-table-in-sqlite.db"> </a>
-</h2>
-<blockquote>
-<p>Uses SQLALchemy query.all method to read data</p>
-</blockquote>
-<ul>
-<li>Comment on purpose of following<ol>
-<li>User.query.all:user.query.all goes through the entire list of the users and makes sure that all rows of the SQLAlchemy database are selected.    2. json_ready assignment, google List Comprehension: the json_ready assignment reads all of the data in the SQLAlchemy table. List comprehension means reducing the running of a for loop to one line of code.</li>
-</ol>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -796,6 +760,169 @@ Added data for Jalen Hurts
 </div>
     
 
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">updateq</span><span class="p">():</span>    
+    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the name of the QB to update: "</span><span class="p">)</span>
+    <span class="n">pyer</span> <span class="o">=</span> <span class="n">find_by_name</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+    
+    <span class="c1"># Request new values for the QB attributes</span>
+    <span class="n">atts</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter their attempted passes: "</span><span class="p">)</span>
+    <span class="n">comps</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter their completed passes: "</span><span class="p">)</span>
+    <span class="n">yards</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter their yards this season: "</span><span class="p">)</span>
+    <span class="n">tds</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter how many touchdowns they have thrown for: "</span><span class="p">)</span>
+    <span class="n">pimage</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter their image link: "</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">pyer</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
+            <span class="n">pyer</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">atts</span><span class="o">=</span><span class="n">atts</span><span class="p">,</span> <span class="n">comps</span><span class="o">=</span><span class="n">comps</span><span class="p">,</span> <span class="n">yards</span><span class="o">=</span><span class="n">yards</span><span class="p">,</span> <span class="n">tds</span><span class="o">=</span><span class="n">tds</span><span class="p">,</span> <span class="n">pimage</span><span class="o">=</span><span class="n">pimage</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Updated Player"</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"error"</span><span class="p">)</span>
+
+<span class="n">updateq</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Updated Player Patrick Mahomes
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">delete</span><span class="p">():</span>
+    <span class="c1"># optimize user time to see if uid exists</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a QB name:"</span><span class="p">)</span>
+    <span class="n">pyer</span> <span class="o">=</span> <span class="n">find_by_name</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Try again, that was not a valid name:"</span><span class="p">)</span>
+    
+    <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="nb">object</span> <span class="o">=</span> <span class="n">pyer</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Deleted</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">pyer</span><span class="p">)</span>
+        <span class="k">except</span><span class="p">:</span>  <span class="c1"># error raised if object not created</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Unknown error uid </span><span class="si">{name}</span><span class="s2">"</span><span class="p">)</span>
+<span class="n">delete</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Deleted
+ {"id": 11, "name": "", "atts": "", "comps": "", "yards": "", "tds": "", "pimage": ""}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">crudmenu</span><span class="p">():</span>
+    <span class="n">selection</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a letter to select your option --&gt; c: Create, r: Read, u: Update, d: delete"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">selection</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"c"</span><span class="p">:</span>
+        <span class="n">create</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">selection</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"r"</span><span class="p">:</span>
+        <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
+            <span class="n">table</span> <span class="o">=</span> <span class="n">Player</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+        <span class="n">json_ready</span> <span class="o">=</span> <span class="p">[</span><span class="n">player</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">table</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">json_ready</span>
+    <span class="k">elif</span> <span class="n">selection</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"u"</span><span class="p">:</span>
+        <span class="n">updateq</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">selection</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"d"</span><span class="p">:</span>
+        <span class="n">delete</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">selection</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Please enter a valid letter --&gt; c: Create, r: Read, u: Update, D: delete"</span><span class="p">)</span>
+
+<span class="n">crudmenu</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Deleted
+ {"id": 11, "name": "Joe Montana", "atts": "12", "comps": "12", "yards": "12", "tds": "12", "pimage": "12"}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Reading-users-table-in-sqlite.db">
+<a class="anchor" href="#Reading-users-table-in-sqlite.db" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reading users table in sqlite.db<a class="anchor-link" href="#Reading-users-table-in-sqlite.db"> </a>
+</h2>
+<blockquote>
+<p>Uses SQLALchemy query.all method to read data</p>
+</blockquote>
+<ul>
+<li>Comment on purpose of following<ol>
+<li>User.query.all:user.query.all goes through the entire list of the users and makes sure that all rows of the SQLAlchemy database are selected.    2. json_ready assignment, google List Comprehension: the json_ready assignment reads all of the data in the SQLAlchemy table. List comprehension means reducing the running of a for loop to one line of code.</li>
+</ol>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">

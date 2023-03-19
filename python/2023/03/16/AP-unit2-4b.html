@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      9 min read
     
 </span></p>
 
@@ -130,7 +130,6 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h2"><a href="#Schema-of-Users-table-in-Sqlite.db">Schema of Users table in Sqlite.db </a></li>
 <li class="toc-entry toc-h2"><a href="#Reading-Users-table-in-Sqlite.db">Reading Users table in Sqlite.db </a></li>
-<li class="toc-entry toc-h2"><a href="#Is-"results"-an-object?--How-do-you-know?">Is &quot;results&quot; an object?  How do you know? </a></li>
 <li class="toc-entry toc-h2"><a href="#Create-a-new-User-in-table-in-Sqlite.db">Create a new User in table in Sqlite.db </a></li>
 <li class="toc-entry toc-h2"><a href="#Updating-a-User-in-table-in-Sqlite.db">Updating a User in table in Sqlite.db </a></li>
 <li class="toc-entry toc-h2"><a href="#Delete-a-User-in-table-in-Sqlite.db">Delete a User in table in Sqlite.db </a></li>
@@ -275,9 +274,10 @@ window.onload = wrap_img;
 <li>Attributes in the object include </li>
 </ul>
 </li>
-<li><h2 id='Is-"results"-an-object?--How-do-you-know?'>
-<a class="anchor" href="#Is-" results aria-hidden="true"><span class="octicon octicon-link"></span></a>Is "results" an object?  How do you know?<a class="anchor-link" href="#Is-%22results%22-an-object?--How-do-you-know?"> </a>
-</h2></li>
+<li>Is "results" an object?  How do you know?<ul>
+<li>"results" is an object. We know this because it is a collection of information and has some methods. </li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -352,8 +352,14 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL INSERT to add row</p>
 <ul>
-<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?</li>
-<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
+<li>Compare create() in both SQL lessons.  What is better or worse in the two implementations?<ul>
+<li>The code for this create is much shorter. It requires the conn and cursor objects to be opened and closed. The cursor must execute a code which takes all of the variables and adds it to the table.</li>
+</ul>
+</li>
+<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?<ul>
+<li>SQL INSERT allows rows to be added to an SQL database table. The User init function allows a dataset which is defined to be able to added to an SQL database. This serves a similar purpose.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -416,9 +422,18 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL UPDATE to modify password</p>
 <ul>
-<li>What does the hacked part do?</li>
-<li>Explain try/except, when would except occur?</li>
-<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
+<li>What does the hacked part do?<ul>
+<li>The hacked part of the update function outputs a message to the user if the length of the password is too short. This serves as authentication for the user to make sure that a password is long enough for security purposes.</li>
+</ul>
+</li>
+<li>Explain try/except, when would except occur?<ul>
+<li>Try and except work as things which check if certain code is running/working. Try runs if the code is working smoothly, and in this case serves to update the password. Except occurs if there is an error with the connection and cursor with the database. This serves as a good way to check errors if there is something wrong with the code.</li>
+</ul>
+</li>
+<li>What code seems to be repeated in each of these examples to point, why is it repeated?<ul>
+<li>Code that seems to be repeated include import sqlite3, defining the conn and cursor methods, cursor execute, conn.commit(), and conn and cursor close. This code seems to be repeated because it is required to connect and use the cursor method in the database. cursor.execute() seems to run the wanted code, whether it is update, delete, read, etc. conn.commit() appears that it commits the changes to the database in order to make the changes permanent. The closing of cursor and conn appears to be present because it is important be able to close the working connections and cursors in order to be able to have different ones. This is especially important when working with servers because it makes sure to have orderly code and prevents resources from being used unnecessarily.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -466,7 +481,7 @@ window.onload = wrap_img;
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#update()</span>
+<span class="n">update</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -485,8 +500,14 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses a delete function to remove a user based on a user input of the id.</p>
 <ul>
-<li>Is DELETE a dangerous operation?  Why?</li>
-<li>In the print statemements, what is the "f" and what does {uid} do?</li>
+<li>Is DELETE a dangerous operation?  Why?<ul>
+<li>DELETE can be a dangerous operation because it can remove information from the database, and if placed in the wrong hands, they could delete important information by accident. However, delete is also necessary in order to maintain a clean database with proper records.</li>
+</ul>
+</li>
+<li>In the print statemements, what is the "f" and what does {uid} do?<ul>
+<li>In the print statements, the "f" and {uid} allow the coder to include the selected uid without having to add multiple strings in the print statement. It allows for easy replacement and making a statement which uses the variable which the user called for.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
