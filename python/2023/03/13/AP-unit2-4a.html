@@ -411,6 +411,7 @@ window.onload = wrap_img;
             <span class="bp">self</span><span class="o">.</span><span class="n">uid</span> <span class="o">=</span> <span class="n">uid</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">password</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">set_password</span><span class="p">(</span><span class="n">password</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
         <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
         <span class="k">return</span> <span class="bp">self</span>
 
@@ -499,12 +500,12 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Created new uid toby
-Created new uid niko
-Created new uid lex
-Created new uid whit
-Created new uid indi
-Created new uid raven
+<pre>Records exist uid toby, or error.
+Records exist uid niko, or error.
+Records exist uid lex, or error.
+Records exist uid whit, or error.
+Records exist uid indi, or error.
+Records exist uid raven, or error.
 </pre>
 </div>
 </div>
@@ -663,9 +664,8 @@ Created new uid raven
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Invalid date  require YYYY-mm-dd, date defaulted to 03-19-2023
-Created
- {'id': 7, 'name': '', 'uid': '', 'dob': '03-19-2023', 'age': 0}
+<pre>Found
+ {'id': 7, 'name': 'barack obama', 'uid': 'barack', 'dob': '11-11-1111', 'age': 911}
 </pre>
 </div>
 </div>
@@ -753,8 +753,7 @@ Created
   'name': 'Marion Ravenwood',
   'uid': 'raven',
   'dob': '10-21-1921',
-  'age': 101},
- {'id': 7, 'name': '', 'uid': '', 'dob': '03-19-2023', 'age': 0}]</pre>
+  'age': 101}]</pre>
 </div>
 
 </div>
@@ -784,6 +783,89 @@ Created
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">deleteu</span><span class="p">():</span>
+    <span class="c1"># optimize user time to see if uid exists</span>
+    <span class="n">uid</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your user id:"</span><span class="p">)</span>
+    <span class="n">user</span> <span class="o">=</span> <span class="n">find_by_uid</span><span class="p">(</span><span class="n">uid</span><span class="p">)</span>
+    <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">user</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Deleted"</span><span class="p">,</span> <span class="n">uid</span><span class="p">)</span>
+        <span class="k">except</span><span class="p">:</span>  <span class="c1"># error raised if object not created</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Unknown error uid </span><span class="si">{</span><span class="n">uid</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="n">deleteu</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Deleted barack
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">updateu</span><span class="p">():</span>
+    <span class="n">uid</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your user id:"</span><span class="p">)</span>
+    <span class="n">user</span> <span class="o">=</span> <span class="n">find_by_uid</span><span class="p">(</span><span class="n">uid</span><span class="p">)</span>
+    <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What would you like to change your name to?"</span><span class="p">)</span>
+            <span class="n">password</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What would you like to change your password to?"</span><span class="p">)</span>
+            <span class="n">user</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="n">password</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Updated"</span><span class="p">,</span> <span class="n">uid</span><span class="p">)</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Error with </span><span class="si">{</span><span class="n">uid</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="n">updateu</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Updated barack
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
