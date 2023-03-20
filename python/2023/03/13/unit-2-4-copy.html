@@ -295,7 +295,7 @@ window.onload = wrap_img;
 <span class="c1"># -- c.) SQLAlchemy ORM is layer on top of SQLAlchemy Core, then SQLAlchemy engine, SQL</span>
 <span class="c1"># defining the template the class of Users, class definition template, helps us create objects which are of the type User, template for future object</span>
 <span class="k">class</span> <span class="nc">Player</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
-    <span class="n">__tablename__</span> <span class="o">=</span> <span class="s1">'playerstats'</span>  <span class="c1"># table name is plural, class name is singular</span>
+    <span class="n">__tablename__</span> <span class="o">=</span> <span class="s1">'dataforplayers'</span>  <span class="c1"># table name is plural, class name is singular</span>
 
     <span class="c1"># Define the User schema with "vars" from object</span>
     <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -749,7 +749,14 @@ Added data for Jalen Hurts
   'comps': '306',
   'yards': '3701',
   'tds': '22',
-  'pimage': 'images/jhurts.png'}]</pre>
+  'pimage': 'images/jhurts.png'},
+ {'id': 11,
+  'name': '',
+  'atts': '',
+  'comps': '',
+  'yards': '',
+  'tds': '',
+  'pimage': ''}]</pre>
 </div>
 
 </div>
@@ -798,7 +805,7 @@ Added data for Jalen Hurts
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Updated Player Patrick Mahomes
+<pre>Updated Player 
 </pre>
 </div>
 </div>
@@ -871,14 +878,13 @@ Added data for Jalen Hurts
         <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
             <span class="n">table</span> <span class="o">=</span> <span class="n">Player</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
         <span class="n">json_ready</span> <span class="o">=</span> <span class="p">[</span><span class="n">player</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">table</span><span class="p">]</span>
-        <span class="k">return</span> <span class="n">json_ready</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">json_ready</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">selection</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"u"</span><span class="p">:</span>
         <span class="n">updateq</span><span class="p">()</span>
     <span class="k">elif</span> <span class="n">selection</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">"d"</span><span class="p">:</span>
         <span class="n">delete</span><span class="p">()</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">selection</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Please enter a valid letter --&gt; c: Create, r: Read, u: Update, D: delete"</span><span class="p">)</span>
-
 <span class="n">crudmenu</span><span class="p">()</span>
 </pre></div>
 
@@ -893,7 +899,7 @@ Added data for Jalen Hurts
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Deleted
- {"id": 11, "name": "Joe Montana", "atts": "12", "comps": "12", "yards": "12", "tds": "12", "pimage": "12"}
+ {"id": 11, "name": "Marcus Mariota", "atts": "200", "comps": "100", "yards": "500", "tds": "5", "pimage": "images/mm.png"}
 </pre>
 </div>
 </div>
