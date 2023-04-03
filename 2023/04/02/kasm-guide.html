@@ -209,16 +209,33 @@ window.onload = wrap_img;
 
 </div>
 </div>
-</div>sudo fallocate -l 4g /mnt/4GiB.swap
-sudo chmod 600 /mnt/4GiB.swap
-sudo mkswap /mnt/4GiB.swap
-sudo swapon /mnt/4GiB.swap
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 
-# Verify swap file exists
-cat /proc/swaps
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">sudo</span> <span class="n">fallocate</span> <span class="o">-</span><span class="n">l</span> <span class="mi">4</span><span class="n">g</span> <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="mi">4</span><span class="n">GiB</span><span class="o">.</span><span class="n">swap</span>
+<span class="n">sudo</span> <span class="n">chmod</span> <span class="mi">600</span> <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="mi">4</span><span class="n">GiB</span><span class="o">.</span><span class="n">swap</span>
+<span class="n">sudo</span> <span class="n">mkswap</span> <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="mi">4</span><span class="n">GiB</span><span class="o">.</span><span class="n">swap</span>
+<span class="n">sudo</span> <span class="n">swapon</span> <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="mi">4</span><span class="n">GiB</span><span class="o">.</span><span class="n">swap</span>
 
-# To make the swap file available on boot
-echo '/mnt/4GiB.swap swap swap defaults 0 0' | sudo tee -a /etc/fstab
+<span class="c1"># Verify swap file exists</span>
+<span class="n">cat</span> <span class="o">/</span><span class="n">proc</span><span class="o">/</span><span class="n">swaps</span>
+
+<span class="c1"># To make the swap file available on boot</span>
+<span class="n">echo</span> <span class="s1">'/mnt/4GiB.swap swap swap defaults 0 0'</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">tee</span> <span class="o">-</span><span class="n">a</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">fstab</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -229,13 +246,30 @@ echo '/mnt/4GiB.swap swap swap defaults 0 0' | sudo tee -a /etc/fstab
 
 </div>
 </div>
-</div>cd /tmp # Rename to directory name
-sudo wget https://kasm-static-content.s3.amazonaws.com/kasm_release_1.9.0.077388.tar.gz #update to current version
-tar -xf https://kasm-static-content.s3.amazonaws.com/kasm_release_1.9.0.077388.tar.gz #update to current version
-sudo bash kasm_release/install.sh
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 
-# If you want/need to change port 443 to something else, you can do that like this:
-sudo bash kasm_release/install.sh -L 8084
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">tmp</span> <span class="c1"># Rename to directory name</span>
+<span class="n">sudo</span> <span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">kasm</span><span class="o">-</span><span class="n">static</span><span class="o">-</span><span class="n">content</span><span class="o">.</span><span class="n">s3</span><span class="o">.</span><span class="n">amazonaws</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">kasm_release_1</span><span class="o">.</span><span class="mf">9.0</span><span class="o">.</span><span class="mf">077388.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> <span class="c1">#update to current version</span>
+<span class="n">tar</span> <span class="o">-</span><span class="n">xf</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">kasm</span><span class="o">-</span><span class="n">static</span><span class="o">-</span><span class="n">content</span><span class="o">.</span><span class="n">s3</span><span class="o">.</span><span class="n">amazonaws</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">kasm_release_1</span><span class="o">.</span><span class="mf">9.0</span><span class="o">.</span><span class="mf">077388.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> <span class="c1">#update to current version</span>
+<span class="n">sudo</span> <span class="n">bash</span> <span class="n">kasm_release</span><span class="o">/</span><span class="n">install</span><span class="o">.</span><span class="n">sh</span>
+
+<span class="c1"># If you want/need to change port 443 to something else, you can do that like this:</span>
+<span class="n">sudo</span> <span class="n">bash</span> <span class="n">kasm_release</span><span class="o">/</span><span class="n">install</span><span class="o">.</span><span class="n">sh</span> <span class="o">-</span><span class="n">L</span> <span class="mi">8084</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
