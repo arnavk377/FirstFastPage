@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      12 min read
     
 </span></p>
 
@@ -741,7 +741,11 @@ Index 7: r
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="2D-Array">2D Array<a class="anchor-link" href="#2D-Array"> </a></h2><ul>
 <li>Explain how the Tic Tac Toe game works<ul>
-<li>The game of Tic Tac Toe works by creating a 2D array with 3 lists in one list. Then, the user selects the position where they would like to place their mark by </li>
+<li>The game of Tic Tac Toe works by creating a 2D array with 3 lists in one list. Then, the user selects the position where they would like to place their mark. There need to be 2 numbers input, to choose the row and the column, since there are rows and columns and select which index of the outer list and then the index of the inner list. Then, the program checks if there is a value at the point and will continue to run if there isn't. Finally, after multiple turns have been run, the program checks if there is a row or diagonal completely filled out to see if there is a winner. If not, there is a tie.</li>
+</ul>
+</li>
+<li>Games which can be made from arrays<ul>
+<li>Games which can be made from arrays include Chess, Checkers, and Battleship. You could probably also create a Snake game or pretty much any flat, 2D game.</li>
 </ul>
 </li>
 </ul>
@@ -749,6 +753,85 @@ Index 7: r
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Lists-and-Dictionaries">Lists and Dictionaries<a class="anchor-link" href="#Lists-and-Dictionaries"> </a></h2><p>Lists and dictionaries are both ways to store numerous values. Lists store values based on indices, while dictionaries store key-value pairs. This means that dictionaries store 2 values for every one of a list. So, a dictionary will end up taking more space for a list with the same number of indices as key-pairs. Dictionaries will probably have different types of values, like strings, integers, or floats. A list will probably hold values of a uniform type. These are both powerful things which can manage complexity for programmers.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">langs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="s2">&quot;C++&quot;</span><span class="p">,</span> <span class="s2">&quot;Java&quot;</span><span class="p">,</span> <span class="s2">&quot;Javascript&quot;</span><span class="p">]</span>
+<span class="n">s_langs</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">langs</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s_langs</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;C&#39;, &#39;C++&#39;, &#39;Java&#39;, &#39;Javascript&#39;, &#39;Python&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">teams</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Kansas City&quot;</span><span class="p">:</span> <span class="s2">&quot;Chiefs&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Denver&quot;</span><span class="p">:</span> <span class="s2">&quot;Broncos&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Las Vegas&quot;</span><span class="p">:</span> <span class="s2">&quot;Raiders&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">teams</span><span class="p">)</span>
+<span class="n">teams</span><span class="p">[</span><span class="s2">&quot;Los Angeles&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Chargers&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">teams</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;Kansas City&#39;: &#39;Chiefs&#39;, &#39;Denver&#39;: &#39;Broncos&#39;, &#39;Las Vegas&#39;: &#39;Raiders&#39;}
+{&#39;Kansas City&#39;: &#39;Chiefs&#39;, &#39;Denver&#39;: &#39;Broncos&#39;, &#39;Las Vegas&#39;: &#39;Raiders&#39;, &#39;Los Angeles&#39;: &#39;Chargers&#39;}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
