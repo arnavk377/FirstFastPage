@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      6 min read
     
 </span></p>
 
@@ -371,7 +371,7 @@ These requirements are met by an AWS EC2 <strong>t.2 medium server</strong> and 
 
 <span class="c1"># Press &quot;i&quot; to insert in vi and create a new line to save the swap</span>
 <span class="c1"># Follow this template to save the swap</span>
-<span class="n">UUID</span><span class="o">=</span><span class="s2">&quot;d13a2905-ed9c-4ea8-b35f-4933ba12d1ed&quot;</span>     <span class="n">none</span>    <span class="n">swap</span>    <span class="n">sw</span>      <span class="mi">0</span> <span class="mi">0</span> <span class="c1"># Replace UUID</span>
+<span class="n">UUID</span><span class="o">=</span><span class="s2">&quot;d13a2905-ed9c-4ea8-b35f-4933ba12d1ed&quot;</span>     <span class="n">none</span>    <span class="n">swap</span>    <span class="n">sw</span>      <span class="mi">0</span> <span class="mi">0</span> <span class="c1"># Replace UUID with that of your own partition</span>
 <span class="c1"># Press &quot;esc&quot; to exit insert mode</span>
 <span class="c1"># Enter &quot;:wq!&quot; to exit vi editor</span>
 </pre></div>
@@ -407,7 +407,7 @@ These requirements are met by an AWS EC2 <strong>t.2 medium server</strong> and 
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sudo</span> <span class="n">mkdir</span> <span class="n">kasmdir</span> <span class="c1"># Makes new directory for kasm</span>
 <span class="n">cd</span> <span class="n">kasmdir</span>
 
-<span class="n">sudo</span> <span class="n">curl</span> <span class="o">-</span><span class="n">O</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">kasm</span><span class="o">-</span><span class="n">static</span><span class="o">-</span><span class="n">content</span><span class="o">.</span><span class="n">s3</span><span class="o">.</span><span class="n">amazonaws</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">kasm_release_1</span><span class="o">.</span><span class="mf">13.0</span><span class="o">.</span><span class="mf">002947.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> <span class="c1"># Will get the zip file for KASM</span>
+<span class="n">sudo</span> <span class="n">curl</span> <span class="o">-</span><span class="n">O</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">kasm</span><span class="o">-</span><span class="n">static</span><span class="o">-</span><span class="n">content</span><span class="o">.</span><span class="n">s3</span><span class="o">.</span><span class="n">amazonaws</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">kasm_release_1</span><span class="o">.</span><span class="mf">13.0</span><span class="o">.</span><span class="mf">002947.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> <span class="c1"># Will fetch the zip file for KASM from the internet</span>
 <span class="n">sudo</span> <span class="n">tar</span> <span class="o">-</span><span class="n">xf</span> <span class="n">kasm_release_1</span><span class="o">.</span><span class="mf">13.0</span><span class="o">.</span><span class="mf">002947.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> <span class="c1"># Unzips the files</span>
 <span class="n">sudo</span> <span class="n">bash</span> <span class="n">kasm_release</span><span class="o">/</span><span class="n">install</span><span class="o">.</span><span class="n">sh</span> <span class="o">-</span><span class="n">L</span> <span class="mi">8084</span> <span class="c1"># Runs the install script</span>
 <span class="c1"># The &quot;-L 8084&quot; specifies a port for the install, which has a default port of 443</span>
@@ -524,6 +524,19 @@ These requirements are met by an AWS EC2 <strong>t.2 medium server</strong> and 
 <li><a href="https://www.youtube.com/watch?v=oHW0quS4pV4&amp;pp=ygUNYXdzIHBhcnRpdGlvbg%3D%3D">Swap Partition on AWS</a></li>
 <li><a href="https://www.youtube.com/watch?v=U7e-mcJdZok&amp;t=920s&amp;pp=ygURbmV0d29ya2NodWNrIGthc20%3D">NetworkChuck YouTube Video on KASM</a></li>
 </ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hacks-Questions">Hacks Questions<a class="anchor-link" href="#Hacks-Questions"> </a></h1><ol>
+<li>What is the purpose of "sudo" when running commands in terminal?</li>
+<li>What are some commands which allow us to look at how the storage of a machine is set up as?</li>
+<li>What do you think are some alternatives to running "curl -O" to get the zip file for KASM?</li>
+<li>What kind of commands do you think the "install.sh" command has and why is it necessary to call it?</li>
+<li>Explain in at least 3-4 sentences how deploying KASM is related to topics talked about in the lesson and/or potential ways to add things mentioned in the lesson to this guide.</li>
+</ol>
 
 </div>
 </div>
