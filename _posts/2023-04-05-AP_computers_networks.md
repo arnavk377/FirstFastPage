@@ -50,6 +50,14 @@ Ports
     - Bandwidth is usually measured in bits per second
 
 - Complete Vocabulary Matching Activity.  Incorporate this into your learnings from year.  To analyze measure path and latency use `traceroute` and `ping` commands from Linux Terminal.  
+
+- Path: A (sequence of computing devices that sends information between each other)
+- Route: E (finding a path between multiple servers)
+- Computer System: B (group of computing devices working together)
+- Computer Device: C (physical device to run programs using cpu/memory/etc)
+- Bandwidth: D (max amt of data that can be sent over the network)
+- Computer Network: F (interconnected computers that send and recieve data amongst each other)
+
     - Path - A sequence of directly connected computing devices that begins at the sender and ends at the receiver.
     - Route - The process of finding a path from sender to receiver.
     - Computer System - A group of computing devices and programs working together for a common purpose.
@@ -64,6 +72,20 @@ Ports
 > Watch/review College Board Daily Video 4.1.2
 
 - Complete True of False Questions
+
+T: Open standards and protocols enable different manufacturers and developers to build hardware and software that can communicate with hardware and software on the rest of the internet.
+
+F: IETF is a task force used to enforce laws to keep manufacturers out of the internet.
+
+F: Routes are determined in advance and are not flexible.
+
+T: A protocol is an agreed-upon set of rules that specify the behavior of a system.
+
+F: UDP guarantees transfers and is faster.
+
+F: The World Wide Web is the internet.
+
+T: HTTP is a protocol used by the World Wide Web.
 
 - Essential Knowledge
     - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols.
@@ -81,8 +103,38 @@ Ports
     - HTTP is a protocol used by the world wide web
     - The world wide web uses the internet
 
-- Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
+- Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highlight vocabulary by illustration. The below illustration have some ideas
 
+Created: 
+
+![]({{site.baseurl}}/images/Personal Computer.png)
+
+Online image I found:
+
+![]({{site.baseurl}}/images/deployimg.png)
+
+
+```
+Personal computer --> Send and receive a packet over a network, which make up parts of file
+Work on computer systems
+Computer network which are connected and can transfer data
+Use a path which the message takes
+Router helps route along the path
+Bandwidth refers to the speed at which packages can flow
+Protocols help make rules for a system
+IP - sets packets with metadata and is put on path through router indicates direction or location of computer
+DNS - gives domains to IP, maps names to IPS
+World Wide Web - linked data pages
+HTTP - links to web servers, usually port 80
+HTTPS - HTTP with security, usually port 4443
+TCP - ensures that the packet has been transmitted
+UDP - tries best to deliver packet
+HTTP - 
+Network Access allows us to get on to the network
+LAN - Physical connections to a network, connection to the same network
+Hop on to autonomous system controlled by internet providers
+
+```
 
 - Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is trasported of the network.   For College Board and future Computer Knowledge you should become familiar with the following ...
 
@@ -115,12 +167,20 @@ The "network" layer is responsible for ***routing data packets between networks*
 
 - Complete the network activity, summarize your understanding of fault tolerance.
 
+Fault tolerance allows us to be able to continue computer tasks even if there are problems with hardware or software. Fault tolerance helps provide alternate paths for devices in order to be able to ensure tasks will be completed. To be fault tolerant, paths will need to be redundant and use more resources, but in order to ensure the network can work in light of failures. More devices can create a stronger network.
+
+![]({{ site.baseurl }}/images/faulttolerance.webp)
+
 ### Parallel and Distributed Computing
 > Review previous lecture on Parallel Computing and watch Daily vidoe 4.3.  Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
 
 - What is naturally Distributed in Frontend/Backend archeticture?  
 
+The frontend is what environment is displayed to the user. The backend is the data which is stored in the backend layer. The frontend is responsible for the user interface and appearing presentable, while the backend is responsible for data storage. Dividing them into two components allows us to have more efficient systems.
+
 - Analyze this command in Docker: ```ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"```.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an [article](https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7)
+
+The environment variable is named ENV GUNICORN_CMD_ARGS with two things specified. The --workers=1 specifies to not have parallel computing, since there is one worker. --bind=0.0.0.0:8086 establishes the port and address to bind to.
 
 
 > Last week we discussed parallel computing on local machine.  There are many options.  Here is something to get parallel computing work with a tool called Ray.
