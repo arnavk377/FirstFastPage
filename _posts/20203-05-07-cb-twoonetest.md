@@ -29,6 +29,26 @@ I did not do a good enough job of checking whether these connections would work 
 ### Q22
 
 A: Option A
+- count  ←  0
+
+- REPEAT 4 TIMES
+
+- {
+
+- count  ←
+-  count + 1
+
+- REPEAT count TIMES
+
+- {
+
+- MOVE_FORWARD()
+
+- }
+
+- ROTATE_LEFT()
+- }
+
 I made a mistake in analyzing which way the robot would go from the original procedure and this messed up my thought process.
 
 ### Q23
