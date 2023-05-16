@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Testing ML | My First Fastpage</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Testing ML" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Quick launch into Variables, Functions, Arrays, Classes, HTML." />
+<meta property="og:description" content="Quick launch into Variables, Functions, Arrays, Classes, HTML." />
+<link rel="canonical" href="https://muffinman1287.github.io/FirstFastPage//FirstFastPage/2023/05/14/testing-ml.html" />
+<meta property="og:url" content="https://muffinman1287.github.io/FirstFastPage//FirstFastPage/2023/05/14/testing-ml.html" />
+<meta property="og:site_name" content="My First Fastpage" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-05-14T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Testing ML" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-05-14T00:00:00-05:00","datePublished":"2023-05-14T00:00:00-05:00","description":"Quick launch into Variables, Functions, Arrays, Classes, HTML.","headline":"Testing ML","mainEntityOfPage":{"@type":"WebPage","@id":"https://muffinman1287.github.io/FirstFastPage//FirstFastPage/2023/05/14/testing-ml.html"},"url":"https://muffinman1287.github.io/FirstFastPage//FirstFastPage/2023/05/14/testing-ml.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/FirstFastPage/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://muffinman1287.github.io/FirstFastPage//FirstFastPage/feed.xml" title="My First Fastpage" /><link rel="shortcut icon" type="image/x-icon" href="/FirstFastPage/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/FirstFastPage/">My First Fastpage</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/FirstFastPage/search/">Search</a><a class="page-link" href="/FirstFastPage/about/">About Me</a><a class="page-link" href="/FirstFastPage/vocab/">Vocab</a><a class="page-link" href="/FirstFastPage/gov/">AP Government</a><a class="page-link" href="/FirstFastPage/categories/">Tags</a><a class="page-link" href="/FirstFastPage/stub/">Stub</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Testing ML</h1><p class="page-description">Quick launch into Variables, Functions, Arrays, Classes, HTML.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-05-14T00:00:00-05:00" itemprop="datePublished">
+        May 14, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/MuffinMan1287/FirstFastPage/tree/master/_notebooks/2023-05-14-testing-ml.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/FirstFastPage/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/MuffinMan1287/FirstFastPage/master?filepath=_notebooks%2F2023-05-14-testing-ml.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/FirstFastPage/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/MuffinMan1287/FirstFastPage/blob/master/_notebooks/2023-05-14-testing-ml.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/FirstFastPage/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FMuffinMan1287%2FFirstFastPage%2Fblob%2Fmaster%2F_notebooks%2F2023-05-14-testing-ml.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/FirstFastPage/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-05-14-testing-ml.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">certifi</span>
+<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">from</span> <span class="nn">tensorflow.keras.applications</span> <span class="kn">import</span> <span class="n">VGG16</span>
+<span class="kn">from</span> <span class="nn">tensorflow.keras.layers</span> <span class="kn">import</span> <span class="n">Dense</span><span class="p">,</span> <span class="n">GlobalAveragePooling2D</span>
+<span class="kn">from</span> <span class="nn">tensorflow.keras.models</span> <span class="kn">import</span> <span class="n">Model</span>
+<span class="kn">from</span> <span class="nn">tensorflow.keras.preprocessing.image</span> <span class="kn">import</span> <span class="n">ImageDataGenerator</span>
+
+<span class="c1"># Set the paths to your dataset and tags</span>
+<span class="n">dataset_path</span> <span class="o">=</span> <span class="s1">&#39;/Users/poonam/Desktop/imgdata&#39;</span>
+<span class="n">tags</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;animals&#39;</span><span class="p">,</span> <span class="s1">&#39;food&#39;</span><span class="p">,</span> <span class="s1">&#39;people&#39;</span><span class="p">]</span>  <span class="c1"># Replace with your own tags</span>
+
+<span class="c1"># Define the parameters for training the model</span>
+<span class="n">image_size</span> <span class="o">=</span> <span class="p">(</span><span class="mi">224</span><span class="p">,</span> <span class="mi">224</span><span class="p">)</span>
+<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">32</span>
+<span class="n">num_epochs</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="c1"># Create data generators for training and validation</span>
+<span class="n">data_generator</span> <span class="o">=</span> <span class="n">ImageDataGenerator</span><span class="p">(</span><span class="n">rescale</span><span class="o">=</span><span class="mf">1.0</span><span class="o">/</span><span class="mf">255.0</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+<span class="n">train_generator</span> <span class="o">=</span> <span class="n">data_generator</span><span class="o">.</span><span class="n">flow_from_directory</span><span class="p">(</span><span class="n">dataset_path</span><span class="p">,</span> <span class="n">target_size</span><span class="o">=</span><span class="n">image_size</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="s1">&#39;training&#39;</span><span class="p">)</span>
+<span class="n">validation_generator</span> <span class="o">=</span> <span class="n">data_generator</span><span class="o">.</span><span class="n">flow_from_directory</span><span class="p">(</span><span class="n">dataset_path</span><span class="p">,</span> <span class="n">target_size</span><span class="o">=</span><span class="n">image_size</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="s1">&#39;validation&#39;</span><span class="p">)</span>
+
+<span class="c1"># Set the SSL certificate file environment variable</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;SSL_CERT_FILE&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">certifi</span><span class="o">.</span><span class="n">where</span><span class="p">()</span>
+
+<span class="c1"># Load the pre-trained VGG16 model without the top classification layer</span>
+<span class="n">base_model</span> <span class="o">=</span> <span class="n">VGG16</span><span class="p">(</span><span class="n">weights</span><span class="o">=</span><span class="s1">&#39;imagenet&#39;</span><span class="p">,</span> <span class="n">include_top</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="n">image_size</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">image_size</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">3</span><span class="p">))</span>
+
+<span class="c1"># Add a global average pooling layer and a dense layer for classification</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">base_model</span><span class="o">.</span><span class="n">output</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">GlobalAveragePooling2D</span><span class="p">()(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="mi">1024</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">)(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">predictions</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tags</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">)(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># Create the model with the VGG16 base and the classification layers</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">inputs</span><span class="o">=</span><span class="n">base_model</span><span class="o">.</span><span class="n">input</span><span class="p">,</span> <span class="n">outputs</span><span class="o">=</span><span class="n">predictions</span><span class="p">)</span>
+
+<span class="c1"># Freeze the weights of the pre-trained layers</span>
+<span class="k">for</span> <span class="n">layer</span> <span class="ow">in</span> <span class="n">base_model</span><span class="o">.</span><span class="n">layers</span><span class="p">:</span>
+    <span class="n">layer</span><span class="o">.</span><span class="n">trainable</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="c1"># Compile the model</span>
+<span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;adam&#39;</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;categorical_crossentropy&#39;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
+
+<span class="c1"># Train the model</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_generator</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="n">num_epochs</span><span class="p">,</span> <span class="n">validation_data</span><span class="o">=</span><span class="n">validation_generator</span><span class="p">)</span>
+
+<span class="c1"># Save the trained model</span>
+<span class="n">model</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;image_tagging_model.h5&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>2023-05-16 09:38:20.994806: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Found 10 images belonging to 3 classes.
+Found 0 images belonging to 3 classes.
+Epoch 1/10
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>2023-05-16 09:38:30.395749: I tensorflow/core/common_runtime/executor.cc:1197] [/device:CPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): INVALID_ARGUMENT: You must feed a value for placeholder tensor &#39;Placeholder/_0&#39; with dtype int32
+	 [[{{node Placeholder/_0}}]]
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1/1 [==============================] - 6s 6s/step - loss: 1.0756 - accuracy: 0.6000
+Epoch 2/10
+1/1 [==============================] - 5s 5s/step - loss: 0.8388 - accuracy: 0.8000
+Epoch 3/10
+1/1 [==============================] - 5s 5s/step - loss: 0.6416 - accuracy: 0.8000
+Epoch 4/10
+1/1 [==============================] - 5s 5s/step - loss: 0.4779 - accuracy: 1.0000
+Epoch 5/10
+1/1 [==============================] - 6s 6s/step - loss: 0.3786 - accuracy: 1.0000
+Epoch 6/10
+1/1 [==============================] - 5s 5s/step - loss: 0.2976 - accuracy: 1.0000
+Epoch 7/10
+1/1 [==============================] - 5s 5s/step - loss: 0.2223 - accuracy: 1.0000
+Epoch 8/10
+1/1 [==============================] - 5s 5s/step - loss: 0.1663 - accuracy: 1.0000
+Epoch 9/10
+1/1 [==============================] - 5s 5s/step - loss: 0.1286 - accuracy: 1.0000
+Epoch 10/10
+1/1 [==============================] - 5s 5s/step - loss: 0.1013 - accuracy: 1.0000
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+<span class="kn">from</span> <span class="nn">tensorflow.keras.preprocessing</span> <span class="kn">import</span> <span class="n">image</span>
+<span class="kn">from</span> <span class="nn">tensorflow.keras.models</span> <span class="kn">import</span> <span class="n">load_model</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Load the saved model</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">load_model</span><span class="p">(</span><span class="s1">&#39;image_tagging_model.h5&#39;</span><span class="p">)</span>
+
+<span class="c1"># Load and preprocess the input image</span>
+<span class="n">image_path</span> <span class="o">=</span> <span class="s1">&#39;/Users/poonam/Downloads/dwayne.jpeg&#39;</span>  <span class="c1"># Replace with the path to your input image</span>
+<span class="n">person</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">image_path</span><span class="p">)</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">load_img</span><span class="p">(</span><span class="n">image_path</span><span class="p">,</span> <span class="n">target_size</span><span class="o">=</span><span class="p">(</span><span class="mi">224</span><span class="p">,</span> <span class="mi">224</span><span class="p">))</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">img_to_array</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">img</span> <span class="o">/</span> <span class="mf">255.0</span>  <span class="c1"># Normalize the image</span>
+
+<span class="c1"># Make predictions</span>
+<span class="n">predictions</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+<span class="n">predicted_class</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">predictions</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># Get the index of the highest probability class</span>
+
+<span class="c1"># Print the predicted class and corresponding tag</span>
+<span class="n">tags</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;animals&#39;</span><span class="p">,</span> <span class="s1">&#39;food&#39;</span><span class="p">,</span> <span class="s1">&#39;people&#39;</span><span class="p">]</span>  <span class="c1"># Replace with your own tags</span>
+<span class="n">predicted_tag</span> <span class="o">=</span> <span class="n">tags</span><span class="p">[</span><span class="n">predicted_class</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Image&quot;</span><span class="p">)</span>
+<span class="n">person</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Predicted class:&quot;</span><span class="p">,</span> <span class="n">predicted_class</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Predicted tag:&quot;</span><span class="p">,</span> <span class="n">predicted_tag</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1/1 [==============================] - 2s 2s/step
+Image
+Predicted class: 2
+Predicted tag: people
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/FirstFastPage/2023/05/14/testing-ml.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/FirstFastPage/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://muffinman1287.github.io/FirstFastPage//FirstFastPage/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/FirstFastPage/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Fastpage project for AP CSP by Arnav</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="” https://github.com/nighthawkcoders “" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/FirstFastPage/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="” https://twitter.com/NighthawkCoding “" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/FirstFastPage/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="” https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q “" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/FirstFastPage/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
