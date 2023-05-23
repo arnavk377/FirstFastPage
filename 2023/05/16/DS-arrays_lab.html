@@ -404,10 +404,10 @@ For loop with shortcut (*) row expansion
 
 
 
-<div id="31bdb90b-c973-4d5e-ae56-58bce90be0fe"></div>
+<div id="081ffaf2-1fa9-42ed-b4d1-66b51ec5e834"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#31bdb90b-c973-4d5e-ae56-58bce90be0fe');
+var element = $('#081ffaf2-1fa9-42ed-b4d1-66b51ec5e834');
 
 /*
 * Creator: Nighthawk Coding Society
@@ -482,10 +482,10 @@ element.append(arr2D);
 
 
 
-<div id="de8e639b-8ff0-4e61-9209-9646cad18975"></div>
+<div id="f72b9537-91da-461b-a850-663dea5ec2f3"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#de8e639b-8ff0-4e61-9209-9646cad18975');
+var element = $('#f72b9537-91da-461b-a850-663dea5ec2f3');
 
 var arr2D = [];
 var rows = 3;
@@ -610,13 +610,19 @@ element.append(arr2D);
         <span class="c1"># concatenation (+) of the loop variable and string to form a countdown message</span>
         <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" little monkeys jumping on the bed..."</span><span class="p">)</span>
 
-        <span class="c1"># cycle through monkeys that are left in poem countdown</span>
-        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>  <span class="c1"># cycles through remaining monkeys in countdown</span>
+        <span class="n">vertical_monkeys</span> <span class="o">=</span> <span class="p">[]</span>
 
-            <span class="c1"># cycles through monkey part by part</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+            <span class="c1"># Iterate over the parts of the monkey row</span>
             <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">monkeys</span><span class="p">[</span><span class="n">row</span><span class="p">])):</span>
-                <span class="c1"># prints specific part of the monkey from the 2D cell</span>
-                <span class="nb">print</span><span class="p">(</span><span class="n">monkeys</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">col</span><span class="p">]</span> <span class="o">+</span> <span class="s2">" "</span><span class="p">)</span>
+                <span class="c1"># Append each part of the monkey row to the corresponding index in vertical_monkeys</span>
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">vertical_monkeys</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">col</span><span class="p">:</span>
+                    <span class="n">vertical_monkeys</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">""</span><span class="p">)</span>
+                <span class="n">vertical_monkeys</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">+=</span> <span class="n">monkeys</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">col</span><span class="p">]</span>
+
+        <span class="c1"># Print the vertical representation of all monkeys on the same line</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">vertical_monkeys</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
 
             <span class="c1"># this new line gives separation between stanza of poem</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\u001b</span><span class="s2">[0m"</span><span class="p">)</span>  <span class="c1"># reset color</span>
