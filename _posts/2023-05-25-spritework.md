@@ -11,7 +11,7 @@ title: Sprite
   <title>Sprite Animation Example</title>
   <style>
     .sprite {
-      background-image: url('../images/runnersprite.webp');
+      background-image: url('/Users/poonam/vscode/FirstFastPage/images/runnersprite.webp');
       background-repeat: no-repeat;
       height: 280px;  /* Adjust the height based on your sprite sheet */
       width: 65px;  /* Calculate the width based on the sprite sheet resolution and number of frames: 1040 / 16 = 65 */
