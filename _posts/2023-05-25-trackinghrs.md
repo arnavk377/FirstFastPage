@@ -25,4 +25,12 @@ title: Project Time Sheet
 | 5/21 | Identify Idea for how to implement image tagging | 0.5 |
 | 5/22 | Work on Database to Prepare for Deployment, continue doing a bit of research on image encoding | 1 |
 | 5/23 | Deploy Backend Site | 1 |
-| Total | E | 12.25 |
+| 5/24 | Making get and post requests in code | 1 |
+| 5/25 | Creating interface for gallery of images and continuing to work on get requests | 1 |
+| 5/26 | Working on API and get requests errors | 1.5 |
+| 5/27 | Working on site and backend, working on images for the API | 2 |
+| 5/28 | Troubleshooting API Get, Post errors, working on and researching image API fixes | 3 |
+| 5/29 | Working more on creating a better gallery interface as well as finding out how to get images properly working on the API | 4 |
+| 5/30 | Troubleshooting and working on helping team with sign up | 2 |
+| 5/31 | Fixing get function on sign up getting and posting to the API, fixing update feature on likes, cleaning up navigation bar and various files in preparation for Night at the Museum | 2 |
+| Total | E | 28.75 |
