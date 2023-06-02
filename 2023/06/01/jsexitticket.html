@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      2 min read
     
 </span></p>
 
@@ -207,10 +207,7 @@ window.onload = wrap_img;
     <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-    <span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
-        <span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-          <span class="nx">loadStats</span><span class="p">();</span>
-        <span class="p">};</span>
+  
         <span class="kd">var</span> <span class="nx">sampleStats</span> <span class="o">=</span> <span class="p">[</span>
           <span class="p">{</span>
             <span class="nx">quarterbackName</span><span class="o">:</span> <span class="s2">&quot;Drew Brees&quot;</span><span class="p">,</span>
@@ -234,55 +231,6 @@ window.onload = wrap_img;
           <span class="p">}</span>
         <span class="p">];</span>
 
-
-        <span class="kd">function</span> <span class="nx">loadStats</span><span class="p">()</span> <span class="p">{</span>
-          <span class="kd">var</span> <span class="nx">tableBody</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;stats-body&quot;</span><span class="p">);</span>
-
-          <span class="nx">tableBody</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
-          <span class="c1">// Loop through the sampleStats array</span>
-          <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">sampleStats</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-            <span class="kd">var</span> <span class="nx">stats</span> <span class="o">=</span> <span class="nx">sampleStats</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
-
-            <span class="c1">// Create a new row for the data</span>
-            <span class="kd">var</span> <span class="nx">newRow</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;tr&quot;</span><span class="p">);</span>
-
-            <span class="c1">// Create cells for each data field</span>
-            <span class="kd">var</span> <span class="nx">quarterbackNameCell</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-            <span class="nx">quarterbackNameCell</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">stats</span><span class="p">.</span><span class="nx">quarterbackName</span><span class="p">;</span>
-            <span class="nx">newRow</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">quarterbackNameCell</span><span class="p">);</span>
-
-            <span class="kd">var</span> <span class="nx">dateCell</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-            <span class="nx">dateCell</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">stats</span><span class="p">.</span><span class="nx">date</span><span class="p">;</span>
-            <span class="nx">newRow</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">dateCell</span><span class="p">);</span>
-
-            <span class="kd">var</span> <span class="nx">completionPercentageCell</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-            <span class="nx">completionPercentageCell</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">stats</span><span class="p">.</span><span class="nx">completionPercentage</span><span class="p">;</span>
-            <span class="nx">newRow</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">completionPercentageCell</span><span class="p">);</span>
-
-            <span class="kd">var</span> <span class="nx">resultCell</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-            <span class="nx">resultCell</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">stats</span><span class="p">.</span><span class="nx">result</span><span class="p">;</span>
-            <span class="nx">newRow</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">resultCell</span><span class="p">);</span>
-
-            <span class="kd">var</span> <span class="nx">yardsThrownCell</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-            <span class="nx">yardsThrownCell</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">stats</span><span class="p">.</span><span class="nx">yardsThrown</span><span class="p">;</span>
-            <span class="nx">newRow</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">yardsThrownCell</span><span class="p">);</span>
-
-            <span class="kd">var</span> <span class="nx">touchdownsThrownCell</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-            <span class="nx">touchdownsThrownCell</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">stats</span><span class="p">.</span><span class="nx">touchdownsThrown</span><span class="p">;</span>
-            <span class="nx">newRow</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">touchdownsThrownCell</span><span class="p">);</span>
-
-            <span class="kd">var</span> <span class="nx">interceptionsThrownCell</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-            <span class="nx">interceptionsThrownCell</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">stats</span><span class="p">.</span><span class="nx">interceptionsThrown</span><span class="p">;</span>
-            <span class="nx">newRow</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">interceptionsThrownCell</span><span class="p">);</span>
-
-            <span class="kd">var</span> <span class="nx">defenseRankCell</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-            <span class="nx">defenseRankCell</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">stats</span><span class="p">.</span><span class="nx">defenseRank</span><span class="p">;</span>
-            <span class="nx">newRow</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">defenseRankCell</span><span class="p">);</span>
-
-            <span class="c1">// Append the new row to the table body</span>
-            <span class="nx">tableBody</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newRow</span><span class="p">);</span>
-          <span class="p">}</span>
-        <span class="p">}</span>
 
         <span class="kd">function</span> <span class="nx">updateQuarterbackStats</span><span class="p">()</span> <span class="p">{</span>
           <span class="kd">var</span> <span class="nx">quarterbackName</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;quarterbackName&quot;</span><span class="p">).</span><span class="nx">value</span><span class="p">;</span>
@@ -370,10 +318,55 @@ window.onload = wrap_img;
             <span class="p">}</span>
           <span class="p">}</span>
         <span class="p">}</span>
+        
+    <span class="kd">function</span> <span class="nx">loadSampleStats</span><span class="p">()</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">tableBody</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;stats-body&quot;</span><span class="p">);</span>
+
+      <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">sampleStats</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">stat</span> <span class="o">=</span> <span class="nx">sampleStats</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+
+        <span class="kd">var</span> <span class="nx">newRow</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;tr&quot;</span><span class="p">);</span>
+
+        <span class="kd">var</span> <span class="nx">quarterbackNameCell</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
+        <span class="nx">quarterbackNameCell</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">stat</span><span class="p">.</span><span class="nx">quarterbackName</span><span class="p">;</span>
+        <span class="nx">newRow</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">quarterbackNameCell</span><span class="p">);</span>
+
+        <span class="kd">var</span> <span class="nx">dateCell</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
+        <span class="nx">dateCell</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">stat</span><span class="p">.</span><span class="nx">date</span><span class="p">;</span>
+        <span class="nx">newRow</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">dateCell</span><span class="p">);</span>
+
+        <span class="kd">var</span> <span class="nx">completionPercentageCell</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
+        <span class="nx">completionPercentageCell</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">stat</span><span class="p">.</span><span class="nx">completionPercentage</span><span class="p">;</span>
+        <span class="nx">newRow</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">completionPercentageCell</span><span class="p">);</span>
+
+        <span class="kd">var</span> <span class="nx">resultCell</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
+        <span class="nx">resultCell</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">stat</span><span class="p">.</span><span class="nx">result</span><span class="p">;</span>
+        <span class="nx">newRow</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">resultCell</span><span class="p">);</span>
+
+        <span class="kd">var</span> <span class="nx">yardsThrownCell</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
+        <span class="nx">yardsThrownCell</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">stat</span><span class="p">.</span><span class="nx">yardsThrown</span><span class="p">;</span>
+        <span class="nx">newRow</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">yardsThrownCell</span><span class="p">);</span>
+
+        <span class="kd">var</span> <span class="nx">touchdownsThrownCell</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
+        <span class="nx">touchdownsThrownCell</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">stat</span><span class="p">.</span><span class="nx">touchdownsThrown</span><span class="p">;</span>
+        <span class="nx">newRow</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">touchdownsThrownCell</span><span class="p">);</span>
+
+        <span class="kd">var</span> <span class="nx">interceptionsThrownCell</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
+        <span class="nx">interceptionsThrownCell</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">stat</span><span class="p">.</span><span class="nx">interceptionsThrown</span><span class="p">;</span>
+        <span class="nx">newRow</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">interceptionsThrownCell</span><span class="p">);</span>
+
+        <span class="kd">var</span> <span class="nx">defenseRankCell</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
+        <span class="nx">defenseRankCell</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">stat</span><span class="p">.</span><span class="nx">defenseRank</span><span class="p">;</span>
+        <span class="nx">newRow</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">defenseRankCell</span><span class="p">);</span>
+
+        <span class="nx">tableBody</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newRow</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+
     <span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-      <span class="nx">loadStats</span><span class="p">();</span>
+      <span class="nx">loadSampleStats</span><span class="p">();</span>
     <span class="p">};</span>
-  <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  
   <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
@@ -453,10 +446,7 @@ window.onload = wrap_img;
     </tbody>
   </table>
   <script>
-    <script>
-        window.onload = function() {
-          loadStats();
-        };
+  
         var sampleStats = [
           {
             quarterbackName: "Drew Brees",
@@ -480,55 +470,6 @@ window.onload = wrap_img;
           }
         ];
 
-
-        function loadStats() {
-          var tableBody = document.getElementById("stats-body");
-
-          tableBody.innerHTML == "";
-          // Loop through the sampleStats array
-          for (var i = 0; i < sampleStats.length; i++) {
-            var stats = sampleStats[i];
-
-            // Create a new row for the data
-            var newRow = document.createElement("tr");
-
-            // Create cells for each data field
-            var quarterbackNameCell = document.createElement("td");
-            quarterbackNameCell.textContent = stats.quarterbackName;
-            newRow.appendChild(quarterbackNameCell);
-
-            var dateCell = document.createElement("td");
-            dateCell.textContent = stats.date;
-            newRow.appendChild(dateCell);
-
-            var completionPercentageCell = document.createElement("td");
-            completionPercentageCell.textContent = stats.completionPercentage;
-            newRow.appendChild(completionPercentageCell);
-
-            var resultCell = document.createElement("td");
-            resultCell.textContent = stats.result;
-            newRow.appendChild(resultCell);
-
-            var yardsThrownCell = document.createElement("td");
-            yardsThrownCell.textContent = stats.yardsThrown;
-            newRow.appendChild(yardsThrownCell);
-
-            var touchdownsThrownCell = document.createElement("td");
-            touchdownsThrownCell.textContent = stats.touchdownsThrown;
-            newRow.appendChild(touchdownsThrownCell);
-
-            var interceptionsThrownCell = document.createElement("td");
-            interceptionsThrownCell.textContent = stats.interceptionsThrown;
-            newRow.appendChild(interceptionsThrownCell);
-
-            var defenseRankCell = document.createElement("td");
-            defenseRankCell.textContent = stats.defenseRank;
-            newRow.appendChild(defenseRankCell);
-
-            // Append the new row to the table body
-            tableBody.appendChild(newRow);
-          }
-        }
 
         function updateQuarterbackStats() {
           var quarterbackName = document.getElementById("quarterbackName").value;
@@ -616,11 +557,56 @@ window.onload = wrap_img;
             }
           }
         }
+        
+    function loadSampleStats() {
+      var tableBody = document.getElementById("stats-body");
+
+      for (var i = 0; i < sampleStats.length; i++) {
+        var stat = sampleStats[i];
+
+        var newRow = document.createElement("tr");
+
+        var quarterbackNameCell = document.createElement("td");
+        quarterbackNameCell.textContent = stat.quarterbackName;
+        newRow.appendChild(quarterbackNameCell);
+
+        var dateCell = document.createElement("td");
+        dateCell.textContent = stat.date;
+        newRow.appendChild(dateCell);
+
+        var completionPercentageCell = document.createElement("td");
+        completionPercentageCell.textContent = stat.completionPercentage;
+        newRow.appendChild(completionPercentageCell);
+
+        var resultCell = document.createElement("td");
+        resultCell.textContent = stat.result;
+        newRow.appendChild(resultCell);
+
+        var yardsThrownCell = document.createElement("td");
+        yardsThrownCell.textContent = stat.yardsThrown;
+        newRow.appendChild(yardsThrownCell);
+
+        var touchdownsThrownCell = document.createElement("td");
+        touchdownsThrownCell.textContent = stat.touchdownsThrown;
+        newRow.appendChild(touchdownsThrownCell);
+
+        var interceptionsThrownCell = document.createElement("td");
+        interceptionsThrownCell.textContent = stat.interceptionsThrown;
+        newRow.appendChild(interceptionsThrownCell);
+
+        var defenseRankCell = document.createElement("td");
+        defenseRankCell.textContent = stat.defenseRank;
+        newRow.appendChild(defenseRankCell);
+
+        tableBody.appendChild(newRow);
+      }
+    }
+
     window.onload = function() {
-      loadStats();
+      loadSampleStats();
     };
+  
   </script>
-  &lt;/script&gt;
 </body>
 </html>
 
