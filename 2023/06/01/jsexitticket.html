@@ -827,10 +827,11 @@ window.onload = wrap_img;
             <span class="kd">var</span> <span class="nx">cells</span> <span class="o">=</span> <span class="nx">rows</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
             <span class="kd">var</span> <span class="nx">found</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 
-            <span class="c1">// </span>
+            <span class="c1">// for loop through cell contents</span>
             <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">cells</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
               <span class="kd">var</span> <span class="nx">cellText</span> <span class="o">=</span> <span class="nx">cells</span><span class="p">[</span><span class="nx">j</span><span class="p">].</span><span class="nx">textContent</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">();</span>
-
+              
+              <span class="c1">// checks if the input is the same as a row</span>
               <span class="k">if</span> <span class="p">(</span><span class="nx">cellText</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">input</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mf">1</span><span class="p">)</span> <span class="p">{</span>
                 <span class="c1">// found to break the loop</span>
                 <span class="nx">found</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
@@ -857,6 +858,7 @@ window.onload = wrap_img;
 
         <span class="kd">var</span> <span class="nx">newRow</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;tr&quot;</span><span class="p">);</span>
 
+        <span class="c1">// adds every sample statistic</span>
         <span class="kd">var</span> <span class="nx">quarterbackNameCell</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
         <span class="nx">quarterbackNameCell</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">stat</span><span class="p">.</span><span class="nx">quarterbackName</span><span class="p">;</span>
         <span class="nx">newRow</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">quarterbackNameCell</span><span class="p">);</span>
